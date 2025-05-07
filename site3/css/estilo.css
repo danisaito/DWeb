@@ -1,1 +1,21 @@
+.fundo {
+    background-color: #FFFFF0;
+}
 
+.barra {
+    background-color: #A3B18A;
+    color: #406938;
+}
+
+.sele:hover {
+    background-color: #344e41;
+    color: #e4eecc;
+   font-weight: 700;
+   font-size: 20px;
+   
+}
+
+.peroda {
+    background-color:#344e41;
+    color: #e4eecc;
+}
