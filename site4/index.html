@@ -1,1 +1,647 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aldeia Yaka Porã</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/estilos.css" rel="stylesheet" />
+  </head>
 
+  <body>
+    <!-- Menu Lateral -->
+    <button class="botao-menu-toggle" type="button" aria-label="Toggle menu">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
+
+    <nav class="menu-lateral" id="menuLateral" aria-label="Menu principal">
+      <div class="menu-items">
+        <a href="#inicio" class="link-menu destaque">Início</a>
+        <a href="#historia" class="link-menu destaque">História</a>
+        <a href="#resenha" class="link-menu destaque">Resenha Literária</a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Seção Inicial -->
+      <section id="inicio" class="secao-principal d-flex align-items-center">
+        <div class="container">
+          <div class="conteudo-principal">
+            <img
+              src="images/texto-principal.png"
+              alt="Logo da Aldeia Yaka Porã"
+            />
+            <h2>MORRO DOS CAVALOS</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção História -->
+      <section id="historia" class="secao-historia">
+        <!-- Menu Secundário -->
+        <div class="menu-secundario">
+          <nav class="container" aria-label="Menu secundário história">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="link-menu active" data-bs-target="#guaranis"
+                  >Guaranis na Aldeia Yaka Porã</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="link-menu" data-bs-target="#luta"
+                  >A luta pela terra</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="link-menu" data-bs-target="#educacao">Educação</a>
+              </li>
+              <li class="nav-item">
+                <a class="link-menu" data-bs-target="#sustentabilidade"
+                  >Sustentabilidade</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="link-menu" data-bs-target="#resistencia"
+                  >Resistência e futuro</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Conteúdo das Subseções -->
+        <div class="container mt-2">
+          <div class="subssecoes">
+            <!-- Guaranis Section -->
+            <div class="subsecao active" id="guaranis">
+              <div id="carrosselGuaranis" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="images/guaranis/aldeia-aerea.png"
+                      class="carousel-image"
+                      loading="lazy"
+                      alt="Vista aérea da aldeia"
+                    />
+                    <div class="carousel-caption">
+                      <p>
+                        A Aldeia Yaka Porã, localizada no território Morro dos
+                        Cavalos, em Santa Catarina, representa não apenas uma
+                        ocupação tradicional indígena, mas também um símbolo de
+                        resistência e reconstrução cultural.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/guaranis/direito-guarani-sc.webp"
+                      class="carousel-image"
+                      loading="lazy"
+                      alt="Território legalizado"
+                    />
+                    <div class="carousel-caption">
+                      <p>
+                        O território é legalizado e protegido pela portaria
+                        declaratória, tendo sido homologado em dezembro de 2024
+                        pelo presidente Lula, o que garante sua identidade como
+                        um território tradicional indígena. No entanto, a luta
+                        para manter e proteger a área tem sido árdua e
+                        constante.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Continue with remaining carousel items -->
+                  <div class="carousel-item">
+                    <img
+                      src="images/guaranis/comunidade-reunida.jpg"
+                      class="carousel-image"
+                      loading="lazy"
+                      alt="Comunidade Guarani"
+                    />
+                    <div class="carousel-caption">
+                      <p>
+                        A comunidade Guarani que habita a Aldeia Yakã Porã é
+                        formada por aproximadamente 45 pessoas, entre adultos,
+                        jovens e crianças.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/guaranis/retrato-lideranca.jpg"
+                      class="carousel-image"
+                      alt="Liderança da Aldeia"
+                    />
+                    <div class="carousel-caption">
+                      <p>
+                        A liderança na Aldeia Yaka Porã é marcada pela figura
+                        inspiradora de Eliara, uma das quatro cacicas mulheres
+                        de Santa Catarina. Formada em Assistência Social pela
+                        UFSC (Universidade Federal de Santa Catarina), Eliara
+                        assumiu a missão de liderar a comunidade após a morte de
+                        seu pai. Inicialmente, a ideia era uma permanência
+                        temporária, mas o desafio se tornou uma missão de vida.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carrosselGuaranis"
+                  data-bs-slide="prev"
+                  aria-label="Slide anterior"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carrosselGuaranis"
+                  data-bs-slide="next"
+                  aria-label="Próximo slide"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Luta Section -->
+            <div class="subsecao" id="luta">
+              <div id="carrosselLuta" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="images/luta/luta-processo.jpg"
+                      class="carousel-image"
+                      loading="lazy"
+                      alt="Luta pela terra processo"
+                    />
+                    <div class="carousel-caption">
+                      <p>
+                        O processo de demarcação do território Morro dos Cavalos
+                        enfrentou resistência do Estado de Santa Catarina, com
+                        constantes políticas anti-indígenas. Após a portaria
+                        declaratória, invasões de pessoas não indígenas se
+                        intensificaram, com indivíduos buscando indenizações
+                        indevidas.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/luta/luta-ataque.png"
+                      class="carousel-image"
+                      loading="lazy"
+                      alt="Luta pela terra ataque"
+                    />
+                    <div class="carousel-caption">
+                      <p>
+                        A comunidade enfrentou ataques severos, como a tentativa
+                        de invasão de casas durante a madrugada e o incêndio
+                        criminoso de dois barcos utilizados para pesca,
+                        atividade essencial para a sobrevivência local.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carrosselLuta"
+                  data-bs-slide="prev"
+                  aria-label="Slide anterior"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carrosselLuta"
+                  data-bs-slide="next"
+                  aria-label="Próximo slide"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Educação Section -->
+            <div class="subsecao" id="educacao">
+              <div class="cards-container">
+                <div class="card-texto aparecer">
+                  <p>
+                    Apesar das melhorias, a educação foi um dos maiores desafios
+                    enfrentados pela Aldeia Yakã Porã. Inicialmente, as crianças
+                    precisavam caminhar 15 minutos até uma escola próxima, onde
+                    enfrentaram preconceito por parte de alunos e professores. A
+                    ausência de transporte escolar agrava a situação, forçando a
+                    comunidade a lutar por uma escola própria.
+                  </p>
+                </div>
+                <div class="card-texto aparecer" style="animation-delay: 0.3s">
+                  <p>
+                    Sem apoio do Estado, Eliara e a comunidade mobilizaram
+                    parcerias, como a com a Escola Nabá, de Florianópolis, onde
+                    estudantes de engenharia participaram da construção da
+                    primeira escola de bioconstrução. Mesmo com limitações
+                    estruturais, o espaço permitiu que as crianças tivessem
+                    aulas.
+                  </p>
+                </div>
+
+                <div class="card-texto aparecer" style="animation-delay: 0.6s">
+                  <p>
+                    Em 2022, após anos de luta e negociações com o Ministério
+                    Público e o Estado, a escola finalmente foi reconhecida
+                    oficialmente. Hoje, a escola conta com professores indígenas
+                    formados, que ensinam com base na perspectiva cultural
+                    Guarani. As aulas vão além do ensino formal, integrando
+                    práticas de agroecologia, manejo da terra e conhecimento
+                    tradicional.
+                  </p>
+                </div>
+              </div>
+
+              <div id="carrosselEducacao" class="carousel slide mt-4">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="images/educacao/educacao1.jpg"
+                      class="carousel-image"
+                      loading="lazy"
+                      alt="Educação na aldeia"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/educacao/educacao2.webp"
+                      class="carousel-image"
+                      loading="lazy"
+                      alt="Escola da comunidade"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/educacao/educacao3.jpeg"
+                      class="carousel-image"
+                      loading="lazy"
+                      alt="Atividades educacionais"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carrosselEducacao"
+                  data-bs-slide="prev"
+                  aria-label="Slide anterior"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carrosselEducacao"
+                  data-bs-slide="next"
+                  aria-label="Próximo slide"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Sustentabilidade Section -->
+            <div class="subsecao" id="sustentabilidade">
+              <div id="carrosselSustentabilidade" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="images/sustentabilidade/pratica-sustentavel.jpeg"
+                      class="carousel-image"
+                      loading="lazy"
+                      alt="Práticas sustentáveis na aldeia"
+                    />
+                    <div class="carousel-caption">
+                      <p>
+                        A Aldeia Yakã Porã começou a se transformar a partir de
+                        práticas sustentáveis, como o manejo do pinus – uma
+                        vegetação invasiva que impede o crescimento de outras
+                        plantas. Por meio do reflorestamento, o território está
+                        sendo reflorestado com árvores frutíferas, hortaliças e
+                        alimentos como mandioca, batata e cana-de-açúcar. Esse
+                        trabalho não apenas garante segurança alimentar, mas
+                        também promove o retorno da fauna local, como os
+                        pássaros, que há tempos não desciam mais ao território.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/sustentabilidade/construcao-sustentavel.jpg"
+                      class="carousel-image"
+                      loading="lazy"
+                      alt="Construção de casas"
+                    />
+                    <div class="carousel-caption">
+                      <p>
+                        A construção de casas também reflete a criatividade e a
+                        resiliência do povo Guarani. Utilizando bambu e
+                        materiais naturais, foi possível erguer moradias e até
+                        uma escola comunitária. A primeira casa de bambu
+                        tornou-se um símbolo, destacando-se pela beleza e
+                        eficiência da bioconstrução.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carrosselSustentabilidade"
+                  data-bs-slide="prev"
+                  aria-label="Slide anterior"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carrosselSustentabilidade"
+                  data-bs-slide="next"
+                  aria-label="Próximo slide"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+            </div>
+            <!-- Resistência Section -->
+            <div class="subsecao" id="resistencia">
+              <div id="carrosselResistencia" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="images/resistencia-futuro/res-futuro1.jpg"
+                      class="carousel-image"
+                      loading="lazy"
+                      alt="Representação no governo"
+                    />
+                    <div class="carousel-caption">
+                      <p>
+                        A história da Aldeia Yaka Porã é uma narrativa de
+                        resistência, coletividade e reconstrução. A liderança de
+                        Eliara, apoiada pela comunidade, exemplifica a força do
+                        povo Guarani diante das adversidades. A aldeia segue
+                        crescendo com base na sustentabilidade, educação
+                        diferenciada e na valorização da cultura ancestral.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/resistencia-futuro/res-futuro2.jpg"
+                      class="carousel-image"
+                      loading="lazy"
+                      alt="Construção de casas"
+                    />
+                    <div class="carousel-caption">
+                      <p>
+                        Embora ainda enfrentam desafios estruturais, como a
+                        falta de materiais escolares, móveis e merenda adequada,
+                        a comunidade mantém viva a esperança de um futuro
+                        melhor. Projetos como a trilha ecológica têm sido
+                        desenvolvidos para fortalecer a sustentabilidade local e
+                        atrair visitantes sensíveis à causa indígena.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carrosselResistencia"
+                  data-bs-slide="prev"
+                  aria-label="Slide anterior"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carrosselResistencia"
+                  data-bs-slide="next"
+                  aria-label="Próximo slide"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="tribal-top"></div>
+
+      <!-- Seção Resenha -->
+      <section id="resenha" class="secao-resenha">
+        <div class="container-fluid">
+          <dir class="row">
+            <div class="border-pattern"></div>
+          </dir>
+          <div class="row">
+            <div class="col-md-8 review-section">
+              <h1 class="review-title">Resenha</h1>
+              <h2 class="h4 mb-4">Contos dos Guaranis</h2>
+              <p class="mb-4">
+                Contos dos Guaranis é uma coletânea de histórias que fazem parte
+                da tradição oral do povo guarani. Esses contos misturam
+                mitologia, ensinamentos e explicações sobre o mundo, mostrando
+                como os guaranis enxergam a vida, a natureza e o sagrado. Mais
+                do que simples histórias, são registros de uma cultura que
+                resiste ao tempo e mantém viva sua identidade.
+              </p>
+            </div>
+            <div class="col-md-4 image-section">
+              <img
+                src="images/capa-livro.png"
+                alt="Capa do livro Contos dos Guarani"
+                class="book-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="tribal-top"></div>
+        <!-- Analysis Tabs -->
+        <div class="transition-fade" id="detalheResenha">
+          <div class="container m-2">
+            <div class="row">
+              <div class="col-12">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      data-bs-toggle="tab"
+                      href="#narrador"
+                      >Narrador</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#personagens"
+                      >Personagens</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#tempo"
+                      >Tempo</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#espaco"
+                      >Espaço</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#enredo"
+                      >Enredo</a
+                    >
+                  </li>
+                </ul>
+
+                <div class="tab-content">
+                  <div
+                    class="tab-pane fade card-texto show active"
+                    id="narrador"
+                  >
+                    <p>
+                      Os contos são contados de forma coletiva, como se fossem
+                      passados de geração em geração. Em alguns momentos, o
+                      narrador parece um sábio contando histórias ao redor de
+                      uma fogueira, enquanto em outros, o tom é mais direto e
+                      objetivo.
+                    </p>
+                  </div>
+                  <div
+                    class="tab-pane fade card-texto aparecer"
+                    id="personagens"
+                  >
+                    <p>
+                      Os protagonistas variam entre deuses, espíritos e figuras
+                      humanas. Alguns dos mais marcantes são Tupã, uma divindade
+                      importante, e Jaxy Jatere, uma criatura mística que
+                      aparece em várias lendas. Além disso, os próprios guaranis
+                      aparecem nas histórias, sempre ligados à natureza e aos
+                      ensinamentos de seus ancestrais.
+                    </p>
+                  </div>
+                  <div class="tab-pane fade card-texto aparecer" id="tempo">
+                    <p>
+                      O tempo das histórias não é linear. Algumas se passam em
+                      um passado distante, explicando a criação do mundo e de
+                      certos fenômenos naturais, enquanto outras acontecem em um
+                      presente atemporal, refletindo os desafios da cultura
+                      guarani no dia a dia.
+                    </p>
+                  </div>
+                  <div class="tab-pane fade card-texto aparecer" id="espaco">
+                    <p>
+                      A floresta, os rios e as aldeias são os principais
+                      cenários. A natureza não é só o fundo da história, mas um
+                      elemento essencial, já que para os guaranis tudo está
+                      conectado—ser humano, animais, plantas e espíritos.
+                    </p>
+                  </div>
+                  <div class="tab-pane fade card-texto aparecer" id="enredo">
+                    <p>
+                      Os contos misturam fantasia e realidade, trazendo
+                      ensinamentos e reflexões sobre a vida. Algumas histórias
+                      explicam de onde vieram certos animais ou costumes, outras
+                      falam sobre perigos e desafios enfrentados pelos guaranis.
+                      A maioria delas tem um tom simbólico, passando mensagens
+                      sobre respeito, equilíbrio e sabedoria.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tribal-top"></div>
+        <!-- Final Considerations -->
+        <div class="container-fluid p-0" id="consideracoes">
+          <div class="row">
+            <div class="col-md-8 review-section">
+              <h1 class="review-title">Considerações Finais</h1>
+              <p class="mb-4">
+                Contos dos Guaranis não é só uma coletânea de lendas, mas um
+                pedaço vivo da cultura indígena. Ler essas histórias ajuda a
+                entender melhor a visão de mundo dos guaranis e mostra como sua
+                tradição continua forte, mesmo com as mudanças do tempo. Além de
+                ser uma leitura interessante, é também uma forma de valorizar
+                uma cultura muitas vezes esquecida. Vale muito a pena conhecer.
+              </p>
+            </div>
+            <div class="col-md-4 image-section">
+              <img
+                src="images/capa-livro.png"
+                alt="Capa do livro Contos dos Guarani"
+                class="book-cover"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="tribal-bottom"></div>
+      </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
