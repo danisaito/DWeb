@@ -1,1 +1,773 @@
+/* ==========================================================================
+   Folha de Estilos Principal do Site Aldeia Yaka Porã
+   Desenvolvido por: Ana Paula Cascais e Évelyn Domingos
+   Última atualização: 20/02/2025
+   Projeto desenvolvido para estudo de Bootstrap e CSS
+   - Foi utilizado JavaScript para interatividade no menu e submenus
+   ========================================================================== */
 
+/* ==========================================================================
+   1. Variáveis e Estilos Globais
+   ========================================================================== */
+:root {
+  /* Variáveis de Cores */
+  --laranja-principal: #f47c20;
+  --vermelho-escuro: #6d242d;
+  --texto-claro: #ffffff;
+  --texto-escuro: #333333;
+  --fundo-transparente: rgba(252, 251, 251, 0.384);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif, "Gothic Nolde", sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  overflow-x: hidden;
+  background-color: var(--vermelho-escuro);
+}
+
+/* ==========================================================================
+   2. Menu Lateral e Navegação
+   ========================================================================== */
+
+/* Menu Lateral */
+.menu-lateral {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgb(238 230 233 / 40%);
+  padding: 40px 20px;
+  transform: translateX(-250px);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.menu-lateral.ativo {
+  transform: translateX(0);
+}
+
+/* Botão do Menu */
+.botao-menu-toggle {
+  position: fixed;
+  left: 20px;
+  top: 10px;
+  z-index: 1001;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.botao-menu-toggle .linha {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: var(--texto-claro);
+  transition: 0.3s;
+}
+
+.botao-menu-toggle.ativo .linha:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.botao-menu-toggle.ativo .linha:nth-child(2) {
+  opacity: 0;
+}
+
+.botao-menu-toggle.ativo .linha:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Links do Menu */
+.menu-lateral .link-menu {
+  display: block;
+  color: var(--texto-claro);
+  text-decoration: none;
+  padding: 6px 4px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.menu-lateral .link-menu:hover {
+  color: var(--laranja-principal);
+}
+
+.menu-lateral .link-menu.destaque {
+  color: var(--texto-claro);
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   3. Seção Principal (Hero)
+   ========================================================================== */
+
+.secao-principal {
+  height: 100vh;
+  background-image: url("../imagens/fundo-principal.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 60px;
+}
+
+.secao-principal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.conteudo-principal {
+  color: var(--texto-claro);
+}
+
+.conteudo-principal img {
+  left: 50%;
+  max-width: 100%;
+  transform: translate(-40%, -54%);
+  position: absolute;
+}
+
+.conteudo-principal h2 {
+  left: 50%;
+  transform: translate(-78%, 98%);
+  position: absolute;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+ 4.Estilos para a Seção História e Carrossel
+   ========================================================================== */
+
+.subsecao {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: relative; /* Adicionado */
+}
+
+.subsecao.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Ajuste do menu */
+.menu-secundario .link-menu {
+  cursor: pointer;
+}
+
+/* Menu Secundário */
+.menu-secundario {
+  background-color: var(--laranja-principal);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-secundario .nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.menu-secundario .nav-item .link-menu {
+  color: var(--texto-claro);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem; /* Adicionado padding específico */
+  transition: all 0.3s ease; /* Adicionado transition */
+}
+
+.menu-secundario .nav-item .link-menu.active,
+.menu-secundario .nav-item .link-menu:hover {
+  border-bottom: 2px solid var(--texto-claro);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Carrossel Principal */
+.secao-historia {
+  max-height: min-content;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
+
+.carousel-caption {
+  position: relative !important;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.carousel-item.active {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-item.active .carousel-caption {
+  opacity: 1;
+}
+
+/* Cards de Texto na Seção Educação */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0% 10% 2% 10%;
+}
+
+.card-texto {
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--laranja-principal);
+  transition: transform 0.3s ease;
+}
+
+.card-texto:hover {
+  transform: translateX(10px);
+}
+
+.card-texto p {
+  margin: 0;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: var(--texto-claro);
+}
+
+/* Estilos para o carrossel */
+
+.carousel-caption {
+  position: absolute;
+  background: rgb(0 0 0 / 58%) !important;
+  padding: 15px !important;
+  border-radius: 8px !important;
+  max-height: fit-content;
+  max-width: 100%; /* Match image width */
+  margin: 0 auto !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+/* Imagem do carrossel */
+.carousel-image {
+  max-height: 500px !important;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .carousel-item,
+  .carousel-item img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item,
+  .carousel-item img {
+    height: 400px;
+  }
+
+  .carousel-image {
+    max-width: 100%;
+    height: 250px !important;
+  }
+
+  .carousel-caption {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item,
+  .carousel-item img {
+    height: auto;
+  }
+}
+
+/* Estilos para os botões de controle */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  z-index: 5;
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+/* Carrossel de Imagens na Seção Educação */
+#carrosselEducacao {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 2rem;
+}
+
+#carrosselEducacao .carousel-item {
+  height: 400px;
+}
+
+#carrosselEducacao img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+  opacity: 0.8;
+}
+
+/* Animações */
+@keyframes surgir {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.aparecer {
+  opacity: 0;
+  animation: surgir 0.6s ease forwards;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .menu-secundario .nav {
+    overflow-x: auto;
+    padding: 0.5rem;
+  }
+
+  .menu-secundario .nav-item .link-menu {
+    font-size: 1rem;
+    padding: 0 0 0 0;
+  }
+
+  .carousel-item img {
+    height: 400px;
+  }
+
+  .educacao-content {
+    padding: 1rem;
+  }
+
+  .card-texto {
+    padding: 1rem;
+  }
+
+  .card-texto p {
+    font-size: 1rem;
+  }
+
+  #carrosselEducacao .carousel-item {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .carousel-caption {
+    padding: 15px;
+    bottom: 20px;
+  }
+
+  .card-texto:hover {
+    transform: none;
+  }
+
+  #carrosselEducacao .carousel-item {
+    height: 250px;
+  }
+}
+
+/* Melhorias de Acessibilidade */
+.card-texto:focus-within {
+  outline: 2px solid var(--laranja-principal);
+  outline-offset: 2px;
+}
+
+.link-menu:focus {
+  outline: 2px solid var(--texto-claro);
+  outline-offset: -2px;
+}
+
+/* Estados de Hover e Foco */
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  opacity: 1;
+}
+
+/* Scrollbar Personalizada para o Menu */
+.menu-secundario .nav::-webkit-scrollbar {
+  height: 4px;
+}
+
+.menu-secundario .nav::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.menu-secundario .nav::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+.menu-secundario .nav::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* ==========================================================================
+   5. Seção Resenha Literária
+   ========================================================================== */
+
+.row {
+  margin: 4% 10% 4% 10% !important;
+}
+
+.review-section {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.image-section {
+  background-color: var(--laranja-principal);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.review-title {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: var(--laranja-principal);
+  font-weight: 700;
+}
+
+.book-cover {
+  max-width: 80%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+/* ==========================================================================
+   6. Padrões de Fundo e Bordas
+   ========================================================================== */
+
+/* Top Tribal Border */
+.tribal-top {
+  height: 30px;
+  background-image: linear-gradient(
+      135deg,
+      var(--laranja-principal) 25%,
+      transparent 25%
+    ),
+    linear-gradient(225deg, var(--laranja-principal) 25%, transparent 25%);
+  background-position: 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat-x;
+  /* background-color: var(--vermelho-escuro); */
+}
+
+.tribal-bottom {
+  height: 30px;
+  background-image: linear-gradient(
+      45deg,
+      var(--laranja-principal) 25%,
+      transparent 25%
+    ),
+    linear-gradient(-45deg, var(--laranja-principal) 25%, transparent 25%);
+  background-position: 0 0;
+  background-size: 20px 20px;
+  background-repeat: repeat-x;
+  /* background-color: var(--vermelho-escuro); */
+}
+
+/* Alternate tribal pattern option */
+.tribal-alt {
+  height: 30px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--laranja-principal) 0,
+    var(--laranja-principal) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+@media (max-width: 768px) {
+  .tribal-top,
+  .tribal-bottom,
+  .tribal-alt {
+    height: 20px;
+    background-size: 15px 15px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .review-section,
+  .image-section {
+    min-height: 50vh;
+  }
+
+  .review-title {
+    font-size: 2rem;
+  }
+}
+
+.secao-resenha {
+  color: white;
+  padding: 0 0 !important;
+  background-color: var(--vermelho-escuro);
+  min-height: fit-content;
+}
+
+.resenha-title {
+  color: var(--laranja-principal);
+  font-size: 3.5rem;
+}
+
+.tabs-container {
+  margin-top: 0;
+  background-color: var(--laranja-principal);
+}
+
+.nav {
+  border: none;
+  text-decoration: none;
+}
+
+.nav-tabs {
+  border: none;
+  gap: 0px;
+  margin: 0% 10% 0% 10%;
+}
+
+.nav-tabs .nav-link {
+  background-color: var(--laranja-principal);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 4px !important;
+  padding: 10px 30px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: var(--secondary-color);
+  color: var(--texto-claro);
+}
+
+.tab-content {
+  /* padding: 20px; */
+  background-color: var(--laranja-principal);
+  color: var(--texto-claro);
+  border-radius: 10px;
+  margin-top: 0px;
+}
+
+/* Estilos específicos para a seção de resenha */
+.secao-resenha .subsecao {
+  padding: 2rem 0;
+}
+
+.secao-resenha .menu-secundario {
+  margin-bottom: 2rem;
+}
+
+/* Ajuste para as tabs na seção de detalhes */
+.abas-navegacao .nav-tabs {
+  background-color: var(--laranja-principal);
+  border: none;
+}
+
+.abas-navegacao .nav-tabs .nav-link {
+  color: var(--texto-claro);
+  border: none;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.abas-navegacao .nav-tabs .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--texto-claro);
+  border-bottom: 2px solid var(--texto-claro);
+}
+
+/* ==========================================================================
+   7. Classes Utilitárias
+   ========================================================================== */
+.texto-claro {
+  color: var(--texto-claro);
+}
+
+.sombra-texto {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sobreposicao {
+  position: relative;
+}
+
+.sobreposicao::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Adicione isto às suas classes utilitárias */
+.transition-fade {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* ==========================================================================
+   8. Media Queries - Responsividade
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Menu Lateral Mobile */
+  .menu-lateral {
+    width: 200px;
+    transform: translateX(-200px);
+  }
+
+  .menu-lateral .link-menu {
+    font-size: 1rem;
+    padding: 4px 4px;
+  }
+
+  /* Carrossel Mobile */
+  .carrossel-historia .item-carrossel {
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .secao-principal {
+    height: 80vh;
+  }
+
+  .menu-secundario .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-secundario .nav-item {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+/* ==========================================================================
+   9. Animações
+   ========================================================================== */
+@keyframes surgir {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.aparecer {
+  animation: surgir 0.5s ease forwards;
+}
+
+/* ==========================================================================
+   10. Estados e Interações
+   ========================================================================== */
+.botao-menu-toggle.scrolled .linha {
+  background-color: var(--texto-claro);
+}
+
+.link-menu:focus,
+.link-aba:focus {
+  outline: none;
+}
+
+/* Hover States */
+.link-menu:hover,
+.link-aba:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
