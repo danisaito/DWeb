@@ -1,1 +1,175 @@
+/* ===================== */
+/* Paleta de Cores e Temas */
+/* ===================== */
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --highlight: #27508a;
+  --hover: #507bbd;
+  --header-bg: #5c2e1f;
+  --main-bg: #d4b3a3;
+}
 
+body.dark {
+  --bg: #1e1e1e;
+  --text: #e0e0e0;
+  --highlight: #90cdf4;
+  --hover: #60a7f8;
+  --header-bg: #2c2c2c;
+  --main-bg: #3a2a23;
+}
+
+/* ===================== */
+/* Reset e Corpo         */
+/* ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Verdana', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ===================== */
+/* Cabeçalho e Menu      */
+/* ===================== */
+header {
+  background-color: var(--header-bg);
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  flex-wrap: wrap;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.menu li a:hover,
+.menu li a.active {
+  background-color: #fff;
+  color: var(--header-bg);
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+/* ===================== */
+/* Botão de Tema         */
+/* ===================== */
+#toggleTheme {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ===================== */
+/* Página Inicial        */
+/* ===================== */
+main.home {
+  padding: 2rem;
+  background-color: var(--main-bg);
+  text-align: center;
+}
+
+.main-title-img {
+  width: 900px;
+  margin-bottom: 0%;
+}
+
+main.home h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+main.home p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* ===================== */
+/* Conteúdo com Imagens  */
+/* ===================== */
+main {
+  padding: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.content .text {
+  flex: 1 1 50%;
+}
+
+.content .image {
+  flex: 1 1 40%;
+}
+
+.content .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ===================== */
+/* Rodapé                */
+/* ===================== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--header-bg);
+  color: #fff;
+}
+
+/* ===================== */
+/* Responsividade        */
+/* ===================== */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .menu-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-title-img {
+    width: 80%;
+  }
+}
