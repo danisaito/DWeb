@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mia Couto</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/mia.css">
+</head>
+<body>
+    <div class="topnav"> 
+        <a href="../index.html">Menu Inicial</a>
+        <a href="resenha.html">Resenha</a>
+        <a href="outras.html">Outras Obras</a>
+        <a href="mia.html">Mia Couto</a>
+    </div>
+    <div class="mia-mainbox">
+        <div class="mia-titulo">
+            <span class="mia-autor">Autor, Moçambiquenho</span>
+            <h1>Mia Couto</h1>
+            <span class="mia-citacao">“NÃO HÁ INFINITO SEM LINHA DO HORIZONTE.”<br>– MIA COUTO</span>
+        </div>
+        <div class="mia-biografia">
+            Nascido em 5 de julho de 1955, na cidade da Beira (então província portuguesa de Moçambique), António Emílio Leite Couto adotou desde cedo o pseudónimo “Mia Couto” por sua paixão por gatos. Ainda aos 14 anos, teve seus primeiros poemas publicados no jornal Notícias da Beira (1969) e, em 1971, mudou‑se para Lourenço Marques (atual Maputo), onde iniciou Medicina na universidade, abandonando‑a no início do terceiro ano para dedicar‑se ao jornalismo após o 25 de Abril de 1974. Trabalhou na Tribuna até a destruição de suas instalações em 1975, foi nomeado diretor da Agência de Informação de Moçambique (AIM) durante a luta pela independência e, depois, dirigiu a revista Tempo e o jornal Notícias até 1985, conciliando a atividade de repórter com sua formação em Biologia.
+        </div>
+        <h2 class="mia-subtitulo">MIA COUTO: UM CONTADOR DE MUNDOS</h2>
+        <div class="mia-biografia">
+            Considerado o mais traduzido dos escritores moçambicanos, Mia Couto combina a oralidade africana com invenções linguísticas que reinventam o português. Publicou seu primeiro livro de poesia, Raiz de Orvalho, em 1983, seguido por diversos volumes de contos e romances. Seu romance de estreia, Terra Sonâmbula (1992), ganhou o Prémio Nacional de Ficção da Associação dos Escritores Moçambicanos (1995) e foi eleito um dos dez melhores livros africanos do século XX na Feira do Livro do Zimbábue. Ao longo de sua carreira, recebeu prêmios como o Prêmio Camões (2013), o Neustadt International Prize for Literature (2014) — considerado o “Nobel americano” — e, mais recentemente, o PEN/Nabokov (2025), tornando‑se o primeiro autor de língua portuguesa a conquistá‑lo.
+        </div>
+        <h2 class="mia-subtitulo">ENTRE VOZES, MEMÓRIAS E RAÍZES</h2>
+        <div class="mia-biografia">
+            Além de biólogo de formação, fundou e dirige a IMPACTO Lda., empresa de estudos de impacto ambiental em Moçambique, e leciona ecologia na Universidade Eduardo Mondlane. Sua escrita, classificada como “realismo animista”, mistura sabedoria popular, poesia e denúncia social, dando lugar a neologismos, provérbios e metáforas que evocam tanta magia quanto realidade. Mia Couto continua ativo na crônica jornalística e literária, publicando obras para adultos e crianças, e mantendo viva a conversa entre tradição africana e modernidade.
+        </div>
+    </div>
+    <div class="modal" id="imgModal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img id="modalImg" src="" alt="Imagem ampliada">
+    </div>
+    <script>
+    function openModal(src) {
+        document.getElementById('imgModal').classList.add('active');
+        document.getElementById('modalImg').src = src;
+    }
+    function closeModal() {
+        document.getElementById('imgModal').classList.remove('active');
+        document.getElementById('modalImg').src = '';
+    }
+    // Fecha modal ao clicar fora da imagem
+    document.addEventListener('click', function(e) {
+        const modal = document.getElementById('imgModal');
+        if (modal.classList.contains('active') && e.target === modal) {
+            closeModal();
+        }
+    });
+    </script>
 
+    <div class="borda-final"></div>
+</body>
+</html>
