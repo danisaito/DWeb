@@ -1,1 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terra Sonâmbula</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'EB Garamond', serif;
+      background-color: #2c2e12;
+      color: #fff;
+    }
 
+    header {
+      background-color: #20250e;
+      padding: 10px 20px;
+      text-align: center;
+      border-bottom: 6px solid #776C1E;
+    }
+
+    header nav a {
+      color: #ddd;
+      margin: 0 10px;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-image: url('imagens/menina.jpeg');
+      background-size: cover;
+      /*background-position: center;*/
+      min-height:700px;
+      padding: 80px 20px;      
+      text-align: right;
+      color: #f5b732;
+    }
+
+    .hero h1 {
+      font-size: 80px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 25px;
+      font-style: italic;
+      color: #fdd9ae;
+      margin-top: 12px;
+    }
+
+    .section-cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+      /*background-color: #2c2e12;*/
+    }
+
+    .card {
+      background-color: #922b21;
+      padding: 20px;
+      width: 250px;
+      border-radius: 8px;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-family: 'EB Garamond', serif;
+    }
+
+    .card a {
+      color: #fff;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .cards-bottom {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding: 40px 20px;
+      background-color: #5c1f0c;
+      border-top: 6px solid #776C1E;
+    }
+
+    .cards-bottom img {
+      width: 150px;
+      height: auto;
+      border: 4px solid #776C1E;
+    }
+
+    .cards-bottom a {
+      display: block;
+      margin-top: 10px;
+      color: #f5b732;
+      text-decoration: underline;
+      text-align: center;
+      font-family: 'EB Garamond', serif;
+    }
+
+  footer {
+      background-color: #20250e;
+      color: #ccc;
+      font-size: 14px;
+      padding: 10px 20px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .fale-conosco {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #c0392b;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  
+  .barra{
+    height: 52px;
+    background-image: url('imagens/listra.png');
+    background-repeat: repeat-x;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="barra"></div>  
+  <header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="miacouto.html">Mia Couto</a>
+      <a href="terra.html">Terra Sonâmbula</a>
+      <a href="guerradois.html">Guerra</a>
+    </nav>
+  </header>
+
+  <!--Seção início - imagem de background-->
+  <section class="hero">
+    <h1>Terra Sonâmbula</h1> 
+    <p>“Os sonhos são cartas que enviamos a nossas outras, restantes vidas.”<br> 
+      <strong>- Mia Couto</strong></p>      
+  </section>
+
+  <!--Seção com os cards-->
+  <div class="container-fluid">
+    <section class="section-cards">
+      <div class="card">
+        <h3>Mia Couto + obras</h3>
+        <p>Descubra a genialidade de Mia Couto e explore suas principais obras que revelam a alma de Moçambique.
+        </p>
+      
+        <a href="miacouto.html">saiba mais ></a>
+      </div>
+      <div class="card">
+        <h3>Terra Sonâmbula</h3>
+        <p>Mergulhe no universo poético e onírico de Terra Sonâmbula, uma das maiores obras da literatura africana.
+        </p>
+        <a href="terra.html">saiba mais ></a>
+      </div>
+      <div class="card">
+        <h3>guerra civil moçambique</h3>
+        <p>Entenda o impacto histórico e humano da guerra civil em Moçambique e como ela se reflete na literatura do país.</p>
+        <a href="guerradois.html">saiba mais ></a>
+      </div>
+    </section>
+  </div>
+  <div class="barra"></div>  
+  <section class="cards-bottom">
+    <div>
+      <img src="imagens/mia.jpg" alt="livro"  style="width: 300px;" >
+      <a href="https://a.co/d/8IX8FmC">COMPRE AQUI</a>
+    </div>
+    <div>
+      <img src="imagens/ilustracao.png" alt="livro" style="width: 650px;">
+    </div>
+  </section>
+  <div class="barra"></div>  
+  <footer>
+    Instituto Federal de Educação, Ciência e Tecnologia de SantaCatarina - IFSC<br>
+    Telefone: (48) 3877-9000 | Fax/CNPJ 11.402.887/0001-60: (48) 3877-9060
+  </footer>
+
+  <a class="fale-conosco" href="https://www.miacouto.org/">🗣️ Fale conosco</a>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+</html>
