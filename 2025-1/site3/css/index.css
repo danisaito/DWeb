@@ -1,1 +1,80 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-width: 100vw;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../assets/fundo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+.topnav {
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 18px 0 14px 0;
+  position: static;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  background: rgba(255,255,255,0.92);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  border-radius: 0;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+  box-sizing: border-box;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.topnav a {
+  color: #b12e34;
+  background: none;
+  text-align: center;
+  padding: 10px 28px;
+  text-decoration: none;
+  font-size: 1.25em;
+  font-family: 'Montserrat', Arial, sans-serif;
+  border-radius: 18px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: none;
+  margin: 0 2px;
+}
+.topnav a:hover, .topnav a.active {
+  background: #b12e34;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(177,46,52,0.10);
+}
+
+/* Garante que o conteúdo não fique sob a navbar fixa ou sticky */
+
+
+
+
+.w-85{
+  width: 85%;
+}
+
+.divisoria-imagem {
+  background-image: url("../assets/bordado.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80px;
+  width: 100%;
+  margin: 30px auto;
+}
+
 

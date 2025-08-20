@@ -1,0 +1,256 @@
+/* Expansão de conto e resenha */
+.resenha-expand-box {
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.expand-btn {
+  background: #b12e34;
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  padding: 12px 32px;
+  font-size: 1.1em;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 6px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(177,46,52,0.08);
+}
+.expand-btn:hover {
+  background: #971d1d;
+}
+.expand-content {
+  background: #f6e7da;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 24px 28px;
+  margin-bottom: 10px;
+  max-width: 800px;
+  width: 100%;
+  display: none;
+  position: relative;
+  overflow: visible; /* <- Adicione esta linha! */
+}
+.expand-title {
+  color: #b12e34;
+  font-family: 'Georgia', serif;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.expand-subtitle {
+  color: #971d1d;
+  font-size: 1.15em;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.expand-area-conto {
+  min-height: 120px;
+  color: #4b3a1a;
+  font-size: 1.08em;
+  font-family: 'Georgia', serif;
+  background: #f5f2ea;
+  border-radius: 8px;
+  padding: 18px;
+  text-align: justify;
+}
+.expand-area-resenha {
+  color: #333;
+  font-size: 1.08em;
+  font-family: 'Georgia', serif;
+  background: #f5f2ea;
+  border-radius: 8px;
+  padding: 18px;
+  text-align: justify;
+}
+/* Destaque de citação na página de resenha */
+.resenha-citacao-destaque {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  background: #e9dfd0;
+  border-radius: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  margin: 32px auto 40px auto;
+  max-width: 900px;
+  position: relative;
+}
+.resenha-citacao-texto {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Segoe Script', 'Brush Script MT', cursive, sans-serif;
+  color: #6b3e26;
+  font-size: 1.35rem;
+  position: relative;
+}
+.resenha-aspas-abre {
+  font-size: 2.5rem;
+  color: #b85c2b;
+  margin-bottom: -10px;
+}
+.resenha-aspas-fecha {
+  font-size: 2.5rem;
+  color: #b85c2b;
+  align-self: flex-end;
+  margin-top: -10px;
+}
+.resenha-citacao {
+  margin: 0 0 12px 0;
+  font-size: 1.3em;
+  font-style: italic;
+  line-height: 1.5;
+}
+.resenha-autor-citacao {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.1em;
+  color: #3d2b1f;
+  background: #f5e7d6;
+  padding: 6px 16px;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.resenha-livro-icon {
+  font-size: 1.3em;
+}
+.resenha-nome-autor {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.resenha-citacao-imagem {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resenha-citacao-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #eee;
+  border: 3px solid #d2b48c;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+@media (max-width: 700px) {
+  .resenha-citacao-destaque {
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px 6px;
+  }
+  .resenha-citacao-img {
+    width: 120px;
+    height: 120px;
+  }
+  .resenha-citacao-texto {
+    font-size: 1.05rem;
+  }
+}
+/* Estilo para página de resenha */
+.resenha {
+  max-width: 900px;
+  margin: 70px auto 0 auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  padding: 48px 40px 36px 40px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resenha h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #7a1c1c;
+  text-align: center;
+  font-weight: 700;
+}
+.resenha h3 {
+  font-size: 1.4em;
+  margin-bottom: 28px;
+  color: #971d1d;
+  font-weight: 600;
+  text-align: center;
+}
+.resenha p {
+  font-size: 1.15em;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Estilo base para os elementos de decoração */
+.decoracao {
+  position: absolute;
+  width: 180px; /* Aumente aqui! */
+  height: auto;
+  z-index: 1;
+}
+
+/* Posições específicas */
+.decoracao-top-left {
+  width: 200px;
+  top: -20px;
+  left: -20px;
+}
+.decoracao-top-right {
+  width: 200px;
+  top: -20px;
+  right: -20px;
+}
+.decoracao-bottom-left {
+  width: 190px;
+  bottom: -25px;
+  left: -20px;
+}
+.decoracao-bottom-right {
+  width: 190px;
+  bottom: -25px;
+  right: -20px;
+}
+
+/* 1. Topo central */
+.decoracao-top-center {
+  width: 170px;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 2. Meio lateral esquerda */
+.decoracao-middle-left {
+  width: 200px;
+  top: 50%;
+  left: -100px;
+  transform: translateY(-50%);
+}
+
+/* 3. Meio lateral direita */
+.decoracao-middle-right {
+  width: 200px;
+  top: 50%;
+  right: -100px;
+  transform: translateY(-50%);
+}
+
+/* 4. Rodapé central */
+.decoracao-bottom-center {
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}

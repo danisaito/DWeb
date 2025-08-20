@@ -1,0 +1,134 @@
+.mia-mainbox {
+    max-width: 700px;
+    min-height: 80vh;
+    margin: 40px auto 48px auto;
+    background: #f5e7d6;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+    padding: 36px 38px 48px 38px;
+    border-top: 14px solid #b12e34;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.mia-titulo {
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.mia-autor {
+    display: block;
+    font-family: 'Brush Script MT', cursive, serif;
+    font-size: 1.1em;
+    color: #6b3e26;
+    margin-bottom: 2px;
+    letter-spacing: 0.5px;
+}
+.mia-titulo h1 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 2.6em;
+    color: #6b3e26;
+    margin: 0 0 6px 0;
+    font-style: italic;
+    font-weight: normal;
+}
+.mia-citacao {
+    display: block;
+    font-size: 1.05em;
+    color: #7a5a3a;
+    margin-bottom: 0;
+    margin-top: 0;
+    letter-spacing: 0.2px;
+}
+.mia-biografia {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 0 18px 0;
+    font-size: 1.13em;
+    line-height: 1.7;
+    color: #4b3a1a;
+    text-align: justify;
+    margin: 0 0 8px 0;
+}
+.mia-subtitulo {
+    text-align: center;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.45em;
+    color: #6b3e26;
+    margin: 18px 0 8px 0;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+.modal.active {
+    display: flex;
+}
+.modal img {
+    max-width: 100vw;
+    max-height: 100vh;
+    border: 6px solid #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+.modal-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 2.5em;
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    z-index: 2100;
+}
+.mia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.mia-images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+.mia img {
+    border: 4px solid #333;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+.mia img:hover {
+    transform: scale(1.05);
+    border-color: #971d1d;
+}
+.mia img {
+    border: 4px solid #333;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+.mia img:hover {
+    transform: scale(1.05);
+    border-color: #971d1d;
+}

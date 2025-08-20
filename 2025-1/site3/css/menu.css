@@ -1,0 +1,179 @@
+/* Destaque de citação na página inicial */
+.destaque-citacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background: #e9dfd0;
+  border-radius: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  margin: 32px auto 40px auto;
+  max-width: 900px;
+  position: relative;
+}
+
+.citacao-texto {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Segoe Script', 'Brush Script MT', cursive, sans-serif;
+  color: #6b3e26;
+  font-size: 1.35rem;
+  position: relative;
+}
+
+.citacao-texto .aspas-abre {
+  font-size: 2.5rem;
+  color: #b85c2b;
+  margin-bottom: -10px;
+}
+.citacao-texto .aspas-fecha {
+  font-size: 2.5rem;
+  color: #b85c2b;
+  align-self: flex-end;
+  margin-top: -10px;
+}
+.citacao {
+  margin: 0 0 12px 0;
+  font-size: 1.3em;
+  font-style: italic;
+  line-height: 1.5;
+}
+.autor-citacao {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.1em;
+  color: #3d2b1f;
+  background: #f5e7d6;
+  padding: 6px 16px;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.livro-icon {
+  font-size: 1.3em;
+}
+.nome-autor {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.citacao-imagem {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.citacao-imagem img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #eee;
+  border: 3px solid #d2b48c;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 700px) {
+  .destaque-citacao {
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px 6px;
+  }
+  .citacao-imagem img {
+    width: 120px;
+    height: 120px;
+  }
+  .citacao-texto {
+    font-size: 1.05rem;
+  }
+}
+/* .card {
+  --bg: #e8e8e8;
+  --contrast: #e2e0e0;
+  --grey: #93a1a1;
+  position: relative;
+  padding: 9px;
+  background-color: var(--bg);
+  border-radius: 35px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px;
+  width: 50px;
+  height: 350px;
+} */
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-conic-gradient(var(--bg) 0.0000001%, var(--grey) 0.000104%) 60% 60%/600% 600%;
+  filter: opacity(10%) contrast(105%);
+  border-radius: 35px;
+}
+
+.card-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.3em;
+  font-weight: 900;
+  color: #c7c4c4;
+  text-align: center;
+  font-family: monospace;
+}
+/* Container para os cards */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 80px;
+}
+.cards-container {
+    gap: 40px;
+}
+
+.card {
+    background: #D2A05A;
+    border: 2px solid #971d1d;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    padding: 8px 8px 4px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 215px;
+    height: 320px;
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 24px rgba(151,29,29,0.18);
+    border-color: #c62828;
+}
+
+.card-inner img {
+    display: block;
+    margin: 0 auto;
+    max-width: 85%;
+    max-height: 100%;
+    border-radius: 10px;
+    border: 2px solid #971d1d;
+    box-shadow: 0 2px 8px rgba(151,29,29,0.10);
+    background: #fff;
+    transition: transform 0.2s;
+}
+
+.card-inner img:hover {
+    transform: scale(1.05);
+}
