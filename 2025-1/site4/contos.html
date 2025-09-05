@@ -1,0 +1,652 @@
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">  
+    
+    <style>
+      .feature-block {
+        min-height: 320px;
+      }
+      @media (max-width: 991.98px) {
+        .feature-block {
+          min-height: 200px;
+          height: auto !important;
+        }
+      }
+      @media (max-width: 767.98px) {
+        .feature-block {
+          min-height: 120px;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        }
+        .feature-block h2 {
+          font-size: 2rem !important;
+        }
+        .feature-block p {
+          font-size: 1rem !important;
+          padding: 0 10px;
+          max-width: 100vw !important;
+        }
+      }
+    </style>
+
+</head>
+<body class="bg-laranjafundo">
+    <!-- Botão Voltar ao Topo -->
+    <button id="btn-topo" title="Voltar ao topo" style="position:fixed; bottom:32px; right:32px; z-index:9999; background:transparent; border:none; box-shadow:none; padding:0; cursor:pointer; width:60px; height:60px;">
+      <img src="assets/img/BotaoVoltarAoTopo.png" alt="Voltar ao topo" style="width:60px; height:60px; display:block;">
+    </button>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-cianodesaturado sticky-top">
+        <div class="container-fluid ms-5">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/LogoPequena.png" alt="" style="width: 100px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-bege" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bege" href="contos.html">Contos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-bege" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resenhas
+                </a>
+                <ul class="dropdown-menu bg-cianodessaturado">
+                  <li><a class="dropdown-item text-bege" href="solidao.html">Solidão</a></li>
+                  <li><a class="dropdown-item text-bege" href="oPrimoBitu.html">O Primo Bitu</a></li> 
+                  <li><a class="dropdown-item text-bege" href="gaviaoVeioDoSulEPum.html">Gavião Veio do Sul e Pum!</a></li>
+                  <li><a class="dropdown-item text-bege" href="nosChoramosPeloCaoTinhoso.html">Nós Choramos Pelo Cão Tinhoso</a></li>                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bege" aria-current="page" href="autores.html">Autores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bege" href="contos.html#Footer">Créditos</a>
+              </li>
+            </ul>
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+                </div>
+              </div>
+            <div class="search-container">
+        <div class="search-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+        </div>
+        <input type="text" class="form-control search-input" style="font-family: 'Parmigiano Sans Std Reg';" placeholder="Pesquisar..." aria-label="Campo de pesquisa">
+    </div>
+
+          </div>
+        </div>
+      </nav>
+
+    <!-- Banner com Logo -->
+    <header class="masthead" style="background-image: url('assets/img/FundoLogo.png')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <img src="assets/img/Logo.png" alt="Logo Contos Africanos" style="max-width: 80%; height: auto; display: block; margin: 0 auto;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    <!-- Grid Contos -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-1 mx-auto w-50">
+                <!-- Card Livro 1 -->
+                 
+                <div class="col-md-6 col-lg-3 mx-auto">
+                  <div class="book-card mx-auto">
+                     <div class="h-100 w-100 d-flex align-items-center justify-content-center">
+                    <a href="contos.html#Solidao">
+                     <img src="assets/img/Inicio.png" alt="" style="width: 150px;">
+                     </a>
+                     </div>
+                 </div>
+                 <div class="text-center mt-2 w-100" style="min-width: 180px;">
+                 <ul class="list-unstyled me-3">
+                    <a href="contos.html#Solidao" class="text-decoration-none text-black card-link-hover">
+                 <li class="fw-bold" style="font-size: 1.2rem; font-family: 'Essays1743';">
+                Solidão
+                 </li>
+                 </a>
+                 <li class="text-muted" style="font-size: 0.95rem;">Albertino Bragança</li>
+                 </ul>
+                </div>
+              </div>
+             
+                <!-- Card Livro 2 -->
+                <div class="col-md-6 col-lg-3 mx-auto">
+                  <div class="book-card mx-auto">
+                     <div class="h-100 w-100 d-flex align-items-center justify-content-center">
+                    <a href="contos.html#PrimoBitu">
+                     <img src="assets/img/primobitu.jpeg" alt="" style="width: 170px;">
+                     </a>
+                     </div>
+                 </div>
+                 <div class="text-center mt-2 w-100" style="min-width: 180px;">
+                 <ul class="list-unstyled me-3">
+                    <a href="contos.html#PrimoBitu" class="text-decoration-none text-black card-link-hover">
+                 <li class="fw-bold" style="font-size: 1.2rem; font-family: 'Essays1743';">
+                O Primo Bitu
+                 </li>
+                 </a>
+                 <li class="text-muted" style="font-size: 0.95rem;">Fátima Bettencourt</li>
+                 </ul>
+                </div>
+              </div>
+              
+                
+                <!-- Card Livro 3 -->
+                <div class="col-md-6 col-lg-3 mx-auto">
+                  <div class="book-card mx-auto">
+                     <div class="h-100 w-100 d-flex align-items-center justify-content-center">
+                         <a href="contos.html#Gaviao">
+                     <img src="assets/img/wMPCollage.png" alt="" style="width: 160px;">
+                     </a>
+                     </div>
+                 </div>
+                  
+                 <div class="text-center mt-2 w-100" style="min-width: 180px;">
+                 <ul class="list-unstyled me-3">
+                 <a href="contos.html#Gaviao" class="text-decoration-none text-black card-link-hover">
+                 <li class="fw-bold" style="font-size: 1.2rem; font-family: 'Essays1743';">
+                Gavião Veio Do <br>Sul E Pum!
+                 </li>
+                 </a>
+                 <li class="text-muted" style="font-size: 0.95rem;">Boaventura Cardoso</li>
+                 </ul>
+                </div>
+              </div>
+             
+                
+                <!-- Card Livro 4 -->
+                <div class="col-md-6 col-lg-3 mx-auto">
+                  <div class="book-card mx-auto">
+                     <div class="h-100 w-100 d-flex align-items-center justify-content-center">
+                         <a href="contos.html#CaoTinhoso">
+                     <img src="assets/img/CaoTinhosoCapa.png" alt="" style="width: 150px;">
+                      </a>
+                     </div>
+                 </div>
+                 
+                 <div class="text-center mt-2 w-100" style="min-width: 180px;">
+                 <ul class="list-unstyled me-3">
+                 <a href="contos.html#CaoTinhoso" class="text-decoration-none text-black card-link-hover">
+                 <li class="fw-bold" style="font-size: 1.2rem; font-family: 'Essays1743';">
+                Nós Choramos<br>Pelo Cão Tinhoso
+                 </li>
+                 </a>
+                 <li class="text-muted" style="font-size: 0.95rem;">Ondjaki</li>
+                 </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Bloco de texto-->
+    <section>
+        <div class="container">
+            <div class="mx-auto classetextolargura">
+
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Feature Block -->           
+    <section class="feature-block py-5 text-white bg-laranjaterroso" style="height: 560px;">
+        <div class="container text-center">
+            <div class="d-flex flex-column align-items-center justify-content-center mx-auto">
+                <img src="assets/img/IconeSaoTomeEPrincipe.png" alt="Ícone São Tomé" style="width: 120px; height: 120px;">
+            </div>
+            <h2 class="fw-bold mb-3 text-black" style="font-family: 'Essays1743'; font-size: 50px;" >São Tomé e Príncipe</h2>
+            <div class="d-flex flex-column align-items-center justify-content-center mx-auto">
+                <img src="assets/img/SaoTome.png" alt="🇸🇹" style="width: 50px; height: 35px;">
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center mx-auto">
+                <img src="assets/img/Dots.png" alt="Dots" style="width: 40px; height: 80px; margin: 10px 0;">
+            </div>
+            <p class="mx-auto text-white" style="max-width: 600px; text-align: center; font-family: 'TT Chocolates';">
+                Arquipélago situado ao sul do golfo da Guiné, colonizado pelos portugueses em 1485 e independente em 1975, São Tomé e Principe é um dos menores países da Africa. Nas histórias de seu povo, as palavras em português, misturadas a linguas imemoriais, aparecem embaralhadas ao canto e à dança.
+            </p>
+        </div>
+    </section>
+    
+    <div id="Solidao" style="background-color: #b35227; margin-top: 15px; padding: 10px;"></div>
+    <div style="background-color: #b35227; margin-top: 10px; margin-bottom: 20px; padding: 5px;"></div>
+
+     
+          <!--Título do Conto-->
+<div class="container-fluid bg-laranjabrilhante py-3">
+  <img src="assets/img/IconeSaoTomeEPrincipe.png" alt="" width="60" height="60" class="ÍconePaís d-inline-block align-text-top">
+  <img src="assets/img/SetaTituloDoConto.png" alt="" width="20" height="60" class="d-inline-block align-text-top">
+  <h1 class="d-inline-block align-text-top">Solidão</h1>
+</div>
+
+
+    
+
+    <!-- Bloco de Detalhes do Conto -->
+    <section class="book-detail py-5 bg-bege" style="margin-bottom: 90px;">
+        <div class="container">
+            <div class="row g-4 w-75 mx-auto">
+                <!-- Capa do Conto -->
+                <div class="col-md-6 col-lg-5 text-center">
+                        <div style="display: inline-block; position: relative; width: 75%; max-width: 400px;">
+                          <!-- Sombra esquerda -->
+                          <span style="position: absolute; top: 5px; left: -18px; width: 32px; height: 100%; min-height: 180px; max-height: 100%; z-index: 0; filter: blur(7px); background: var(--bs-verdedessaturado, #5e5b40); opacity: 0.7;"></span>
+                          <!-- Sombra inferior -->
+                          <span style="position: absolute; left: -5px; bottom: -18px; width: 100%; height: 32px; z-index: 0; filter: blur(7px); background: var(--bs-verdedessaturado, #5e5b40); opacity: 0.7;"></span>
+                          <img src="assets/img/Inicio.png" alt="" class="img-fluid" style="position: relative; z-index: 1; width: 100%; height: auto;">
+                        </div>
+                </div>
+                
+                <!-- Informações do Conto -->
+                <div class="col-md-6 col-lg-7 mx-auto">
+          <div class="Lista row mb-4">
+              <div class="col-md-6">
+                  <ul class="list-unstyled">
+                      <li class="mb-1"><strong>País:</strong> São Tomé e Príncipe <img src="assets/img/SaoTome.png" alt="🇸🇹" style="width: 25px; margin-left: 5px;"></li>
+                      <li class="mb-1"><strong>Livro:</strong> Rosa do Riboque e Outros Contos</li>
+                      <li class="mb-1"><strong>Publicação:</strong> 1985</li>
+                      <li class="mb-1"><strong>Leitura:</strong> 8 páginas</li>
+                  </ul>
+              </div>
+              <div class="col-md-6 d-flex justify-content-md-end align-items-start">
+                  <div class="d-flex align-items-center">
+                    <a href="autores.html#Braganca" class="text-decoration-none text-black">
+                      <span class="me-2 fw-medium d-block text-center"><strong>Autor:</strong><br>Albertino <br>Bragança<br></span>
+                      </a>
+                      <a href="autores.html#Braganca" class="text-decoration-none text-black">
+                        <img class="author-icon" src="assets/img/albertinobraganca.png" alt="Albertinno Bragança">
+                        </a>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="mb-4">
+              <p>
+                Mento Muala, protagonista do conto a seguir, poderia ser um personagem de Jorge Amado. Ou então figurar em alguma canção de Dorival Caymmi. Mesmo não estando na Bahia, mas em São Tomé e Príncipe, Mento se assemelha ao personagem muitas vezes retratado na literatura, nas artes plásticas e nas canções brasileiras: o malandro. E como qualquer malandro que se preza, ao lado da ginga e malemolència, Mento Muala guarda em si sua dose de melancolia destilada pouco a pouco em sua história.
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <a href="solidao.html" class="text-decoration-none">
+                        <button class="btn btn-primary px-4 py-2 rounded-pill bg-laranjaterroso" style="box-shadow: 4px 5px 10px 0 #490700; font-family: 'Chau Philomene One';">
+                            Leia a resenha
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid my-5 py-5">
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="assets/img/PassaroSeparacao.png" alt="" style="display: block; margin: 0 auto;width: 15vw;">
+        </div>
+    </div>
+
+     <!-- Feature Block -->           
+    <section class="feature-block py-5 text-white bg-laranjaterroso" style="height: 560px;">
+        <div class="container text-center">
+            <div class="d-flex flex-column align-items-center justify-content-center mx-auto">
+                <img src="assets/img/IconeCaboVerde.png" alt="Ícone Angola" style="width: 120px; height: 120px;">
+            </div>
+            <h2 class="fw-bold mb-3 text-black" style="font-family: 'Essays1743'; font-size: 50px;" >Cabo Verde</h2>
+             <div class="d-flex flex-column align-items-center justify-content-center mx-auto">
+                <img src="assets/img/CaboVerde.png" alt="🇨🇻" style="width: 50px; height: 35px;">
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center mx-auto">
+                <img src="assets/img/Dots.png" alt="Dots" style="width: 40px; height: 80px; margin: 10px 0;">
+            </div>
+            <p class="mx-auto text-white" style="max-width: 600px; text-align: center; font-family: 'TT Chocolates';">
+                A língua oficial é o português. Entretanto, a língua nacional de Cabo Verde, a língua do povo, é o crioulo cabo-verdiano. Em todos os seus aspectos, a cultura caracteriza-se por uma miscigenação de elementos europeus e africanos. Não se trata de um somatório de duas culturas, convivendo lado a lado, mas sim, um terceiro produto, totalmente novo, resultante de um intercâmbio que começou há quinhentos anos.
+            </p>
+        </div>
+    </section>
+    
+    <div id="PrimoBitu" style="background-color: #b35227; margin-top: 15px; padding: 10px;"></div>
+    <div style="background-color: #b35227; margin-top: 10px; margin-bottom: 20px; padding: 5px;"></div>
+
+     
+          <!--Título do Conto-->
+        <div class="container-fluid bg-laranjabrilhante py-3">
+            <img src="assets/img/IconeCaboVerde.png" alt="" width="60" height="60" class="ÍconePaís d-inline-block align-text-top">
+            <img src="assets/img/SetaTituloDoConto.png" alt="" width="20" height="60" class="d-inline-block align-text-top">
+            <h1 class="d-inline-block align-text-top">O Primo Bitu</h1>
+        </div>
+
+    
+
+    <!-- Bloco de Detalhes do Conto -->
+    <section class="book-detail py-5 bg-bege" style="margin-bottom: 90px;">
+        <div class="container">
+            <div class="row g-4 w-75 mx-auto">
+                <!-- Capa do Conto -->
+                <div class="col-md-6 col-lg-5 text-center">
+                        <div style="display: inline-block; position: relative; width: 75%; max-width: 400px;">
+                          <!-- Sombra esquerda -->
+                          <span style="position: absolute; top: 5px; left: -18px; width: 32px; height: 100%; min-height: 180px; max-height: 100%; z-index: 0; filter: blur(7px); background: var(--bs-verdedessaturado, #5e5b40); opacity: 0.7;"></span>
+                          <!-- Sombra inferior -->
+                          <span style="position: absolute; left: -5px; bottom: -18px; width: 100%; height: 32px; z-index: 0; filter: blur(7px); background: var(--bs-verdedessaturado, #5e5b40); opacity: 0.7;"></span>
+                          <img src="assets/img/primobitu.jpeg" alt="" class="img-fluid" style="position: relative; z-index: 1; width: 100%; height: auto;">
+                        </div>
+                </div>
+                
+                <!-- Informações do Conto -->
+                <div class="col-md-6 col-lg-7 mx-auto">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled" style="font-family: 'TT Chocolates';">
+                            <li class="mb-1"><strong>País:</strong> Cabo Verde <img src="assets/img/CaboVerde.png" alt="🇨🇻" style="width: 25px; margin-left: 5px; margin-bottom: 5px;"></li>
+                            <li class="mb-1"><strong>Livro:</strong> Semear em pó</li>
+                            <li class="mb-1"><strong>Publicação:</strong> 1994</li>
+                            <li class="mb-1"><strong>Leitura:</strong> 6 páginas</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-md-end align-items-start">
+                        <div class="d-flex align-items-center" style="font-family: 'TT Chocolates';">
+                          <a href="autores.html#Fatima" class="text-decoration-none text-black">
+                            <span class="me-2 fw-medium d-block text-center"><strong>Autora:</strong><br>Fátima <br>Bettencourt<br></span>
+                            </a>
+                            <a href="autores.html#Fatima">
+                              <img class="author-icon" src="assets/img/11533546.normal.jpg" alt="Fátima Bettencourt">
+                              </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <p>
+                      Semear em Pó é um feixe de recordações e informações de infância. numa linguagem fluente onde as palavras se combinam para nos fazer viajar no tempo para o espaço do universo belo e querido.
+É constituída de curtas crónicas em que as circunstâncias não são imaginadas mas sim vividas: As observações são perspicazes e solidificam a memória. O conto “O Primo Bitu”, presente no livro feito por Fátima mostra as memórias e o afeto, vividos por ela.<br> 
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <a href="oPrimoBitu.html" class="text-decoration-none">
+                        <button class="btn btn-primary px-4 py-2 rounded-pill bg-laranjaterroso" style="box-shadow: 4px 5px 10px 0 #490700; font-family: 'Chau Philomene One';">
+                            Leia a resenha
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid my-5 py-5">
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="assets/img/PassaroSeparacao.png" alt="" style="display: block; margin: 0 auto;width: 15vw;">
+        </div>
+    </div>
+
+     <!-- Feature Block -->           
+    <section class="feature-block py-5 text-white bg-laranjaterroso" style="height: 560px;">
+        <div class="container text-center">
+            <div class="d-flex flex-column align-items-center justify-content-center mx-auto">
+                <img src="assets/img/IconeAngola.png" alt="Ícone Angola" style="width: 120px; height: 120px;">
+            </div>
+            <h2 class="fw-bold mb-3 text-black" style="font-family: 'Essays1743'; font-size: 50px;" >Angola</h2>
+            <div class="d-flex flex-column align-items-center justify-content-center mx-auto">
+                <img src="assets/img/Angola.png" alt="🇦🇴" style="width: 50px; height: 35px;">
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center mx-auto">
+                <img src="assets/img/Dots.png" alt="Dots" style="width: 40px; height: 80px; margin: 10px 0;">
+            </div>
+            <p class="mx-auto text-white" style="max-width: 600px; text-align: center; font-family: 'TT Chocolates';">
+                Banhada pelo Atlântico Sul, Angola carrega marcas profundas de sua história. Sendo o maior país lusófono da África, o português convive juntamente de línguas nacionais como o kimbundu, umbundu e kikongo. Angola se refaz após o término da guerra civil em 2002, e os contos a seguir usam palavras como motins: Mostram as várias faces da guerra, o amadurecer em meio à violência e a busca por uma identidade angolana.
+            </p>
+        </div>
+    </section>
+    
+    <div id="Gaviao" style="background-color: #b35227; margin-top: 15px; padding: 10px;"></div>
+    <div style="background-color: #b35227; margin-top: 10px; margin-bottom: 20px; padding: 5px;"></div>
+
+     
+          <!--Título do Conto-->
+        <div class="container-fluid bg-laranjabrilhante py-3">
+            <img src="assets/img/IconeAngola.png" alt="" width="60" height="60" class="ÍconePaís d-inline-block align-text-top">
+            <img src="assets/img/SetaTituloDoConto.png" alt="" width="20" height="60" class="d-inline-block align-text-top">
+            <h1 class="d-inline-block align-text-top">Gavião Veio do Sul e Pum!</h1>
+        </div>
+
+    
+
+    <!-- Bloco de Detalhes do Conto -->
+    <section class="book-detail py-5 bg-bege" style="margin-bottom: 90px;">
+        <div class="container">
+            <div class="row g-4 w-75 mx-auto">
+                <!-- Capa do Conto -->
+                <div class="col-md-6 col-lg-5 text-center">
+                        <div style="display: inline-block; position: relative; width: 75%; max-width: 400px;">
+                          <!-- Sombra esquerda -->
+                          <span style="position: absolute; top: 5px; left: -18px; width: 32px; height: 100%; min-height: 180px; max-height: 100%; z-index: 0; filter: blur(7px); background: var(--bs-verdedessaturado, #5e5b40); opacity: 0.7;"></span>
+                          <!-- Sombra inferior -->
+                          <span style="position: absolute; left: -5px; bottom: -18px; width: 100%; height: 32px; z-index: 0; filter: blur(7px); background: var(--bs-verdedessaturado, #5e5b40); opacity: 0.7;"></span>
+                          <img src="assets/img/wMPCollage.png" alt="" class="img-fluid" style="position: relative; z-index: 1; width: 100%; height: auto;">
+                        </div>
+                </div>
+                
+                <!-- Informações do Conto -->
+                <div class="col-md-6 col-lg-7 mx-auto">
+          <div class="Lista row mb-4">
+              <div class="col-md-6">
+                  <ul class="list-unstyled">
+                      <li class="mb-1"><strong>País:</strong> Angola <img src="assets/img/Angola.png" alt="🇦🇴" style="width: 25px; margin-left: 5px; margin-bottom: 5px;"></li>
+                      <li class="mb-1"><strong>Livro:</strong> O fogo da Fala</li>
+                      <li class="mb-1"><strong>Publicação:</strong> 1980</li>
+                      <li class="mb-1"><strong>Leitura:</strong> 7 páginas</li>
+                  </ul>
+              </div>
+              <div class="col-md-6 d-flex justify-content-md-end align-items-start">
+                  <div class="d-flex align-items-center">
+                    <a href="autores.html#Boaventura" class="text-decoration-none text-black">
+                      <span class="me-2 fw-medium d-block text-center"><strong>Autor:</strong><br>Boaventura <br>Cardoso<br> </span>
+                      </a>
+                      <a href="autores.html#Boaventura">
+                        <img class="author-icon" src="assets/img/IconeBoaventura.jpg" alt="Ícone Boaventura">
+                        </a>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="mb-4">
+              <p>
+                O narrador de "Gavião veio do sul e pum!", uma criança, junta-se a um visionário, tido como louco em sua comunidade. É com este amigo que o narrador caça pássaros e sonha com a liberdade- embora que ela esteja, ainda, em volta a uma grande nuvem de violência.
+                Tudo muda quando um “gavião” gigante aparece no céu, soltando “ovos” que explodem e incendeiam a terra, revelando o terror da guerra sob o olhar ingênuo da infância. 
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <a href="gaviaoVeioDoSulEPum.html" class="text-decoration-none">
+                        <button class="btn btn-primary px-4 py-2 rounded-pill bg-laranjaterroso" style="box-shadow: 4px 5px 10px 0 #490700; font-family: 'Chau Philomene One';">
+                            Leia a resenha
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid my-5 py-5" id="CaoTinhoso">
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="assets/img/PassaroSeparacao.png" alt="" style="display: block; margin: 0 auto;width: 15vw;">
+        </div>
+    </div>
+
+       <!--Título do Conto-->
+        <div class="container-fluid bg-laranjabrilhante py-3">
+            <img src="assets/img/IconeAngola.png" alt="" width="60" height="60" class="ÍconePaís d-inline-block align-text-top">
+            <img src="assets/img/SetaTituloDoConto.png" alt="" width="20" height="60" class="d-inline-block align-text-top">
+            <h1 class="d-inline-block align-text-top">Nós Choramos Pelo Cão Tinhoso</h1>
+        </div>
+
+    
+
+    <!-- Bloco de Detalhes do Conto -->
+    <section class="book-detail py-5 bg-bege" style="margin-bottom: 90px;">
+        <div class="container">
+            <div class="row g-4 w-75 mx-auto">
+                <!-- Capa do Conto -->
+                <div class="col-md-6 col-lg-5 text-center">
+                        <div style="display: inline-block; position: relative; width: 75%; max-width: 400px;">
+                          <!-- Sombra esquerda -->
+                          <span style="position: absolute; top: 5px; left: -18px; width: 32px; height: 100%; min-height: 180px; max-height: 100%; z-index: 0; filter: blur(7px); background: var(--bs-verdedessaturado, #5e5b40); opacity: 0.7;"></span>
+                          <!-- Sombra inferior -->
+                          <span style="position: absolute; left: -5px; bottom: -18px; width: 100%; height: 32px; z-index: 0; filter: blur(7px); background: var(--bs-verdedessaturado, #5e5b40); opacity: 0.7;"></span>
+                          <img src="assets/img/CaoTinhosoCapa.png" alt="" class="img-fluid" style="position: relative; z-index: 1; width: 100%; height: auto;">
+                        </div>
+                </div>
+                
+                <!-- Informações do Conto -->
+                <div class="col-md-6 col-lg-7 mx-auto">
+                    <div class="Lista row mb-4">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-1"><strong>País:</strong> Angola <img src="assets/img/Angola.png" alt="🇦🇴" style="width: 25px; margin-left: 5px; margin-bottom: 5px;"></li>
+                                <li class="mb-1"><strong>Livro:</strong> Os da Minha Rua</li>
+                                <li class="mb-1"><strong>Publicação:</strong> 2007</li>
+                                <li class="mb-1"><strong>Leitura:</strong> 5 páginas</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-md-end align-items-start">
+                            <div class="d-flex align-items-center">
+                              <a href="autores.html#Ondjaki" class="text-decoration-none text-black">
+                                <span class="me-2 fw-medium d-block text-center"><strong>Autor:</strong><br>Ndalu de <br>Almeida<br> (Ondjaki)</span>
+                                </a>
+                                <a href="autores.html#Ondjaki">
+                                  <img class="author-icon" src="assets/img/IconeOndjaki.jpg" alt="Ícone Ondjaki">
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p>
+                            No tempo do oitavo ano, na aula de português, o personagem apelidado de “Jacó” vive na pele a emoção causada pelo tocante conto “Nós Matamos o Cão Tinhoso!” do escritor moçambicano Luis Bernardo Honwana. Nele, Ginho, o menino narrador, se torna cúmplice da morte de seu cão, mesmo sofrendo com o ocorrido.<br> 
+                            Assim como Ginho, Jacó se vê diante de uma realidade dura demais para a idade que tem, e ao mesmo tempo, intensamente reveladora. Ele se vê dividido entre seus sentimentos e suas expectativas.
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <a href="nosChoramosPeloCaoTinhoso.html" class="text-decoration-none">
+                        <button class="btn btn-primary px-4 py-2 rounded-pill bg-laranjaterroso" style="box-shadow: 4px 5px 10px 0 #490700; font-family: 'Chau Philomene One';">
+                            Leia a resenha
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+                    
+
+
+    
+         <!-- Footer -->
+    <footer class="bg-cianodessaturado text-white py-4" id="Footer">
+  <div class="container">
+    <h4 class="text-center text-bege">Site educacional sem fins lucrativos</h4>
+    <p class="text-center text-bege">Realizado por alunos do Curso Integrado de Comunicação Visual (CV6B)</p>
+    
+    <div class="row py-5 my-5 border-top">
+      <!-- Logos -->
+      <div class="col-md-3 mb-3">
+        <div class="d-flex flex-wrap align-items-center gap-3">
+          <img src="assets/img/LogoAtica.png" alt="Logo Atica" class="img-fluid" style="max-width: 150px;">
+          <img src="assets/img/LogoIFSC.png" alt="Logo IFSC" class="img-fluid" style="max-width: 180px;">
+        </div>
+      </div>
+
+      <!-- Participação -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-bege">Participação</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="solidao.html" class="nav-link p-0 text-white">Solidão</a> — Júlia Souza Paz</li>
+          <li class="nav-item mb-2"><a href="oPrimoBitu.html" class="nav-link p-0 text-white">O Primo Bitu</a> — Mariana Eichenberg Alceno</li>
+          <li class="nav-item mb-2"><a href="gaviaoVeioDoSulEPum.html" class="nav-link p-0 text-white">Gavião Veio do Sul e Pum!</a> — Sofia Barroso Medeiros</li>
+          <li class="nav-item mb-2"><a href="nosChoramosPeloCaoTinhoso.html" class="nav-link p-0 text-white">Nós Choramos Pelo Cão Tinhoso</a> — Bianca Horst Kimura</li>
+        </ul>
+      </div>
+
+      <!-- Onde Ler -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-bege">Onde Ler</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://www.coletivoleitor.com.br/livro/contos-africanos-dos-paises-de-lingua-portuguesa" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer">Contos Africanos dos Países de Língua Portuguesa</a></li>
+          <li class="nav-item mb-2"><a href="https://www.amazon.com.br/Rosa-do-Riboque-outros-contos/dp/9722111566" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer">Rosa do Riboque e Outros Contos</a></li>
+          <li class="nav-item mb-2"><a href="https://sadacosta.com/livro/2203JS404/semear-em-po" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer">Semear em Pó</a></li>
+          <li class="nav-item mb-2"><a href="https://www.traca.com.br/livro/1427721/fogo-fala/" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer">O Fogo da Fala</a></li>
+          <li class="nav-item mb-2"><a href="https://www.amazon.com.br/Os-Minha-Rua-Ondjaki/dp/9722118633" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer">Os da Minha Rua</a></li>
+        </ul>
+      </div>
+
+      <!-- Contato -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-bege">Contato da Editora</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://atica.saber.com.br" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoAtica2.png" alt="" style="width: 10%;"> Site</a></li>
+          <li class="nav-item mb-2"><a href="https://atica.saber.com.br/contato/" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoEmail.png" alt="" style="width: 10%;"> E-mail</a></li>
+          <li class="nav-item mb-2"><a href="https://www.instagram.com/editora.atica/" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoInstagram.png" alt="" style="width: 10%;"> Instagram</a></li>
+          <li class="nav-item mb-2"><a href="https://www.facebook.com/aticascipione/?locale=pt_BR" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoFacebook.png" alt="" style="width: 10%;"> Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    </footer>
+
+      <!-- Widgets acessibilidade NÃO MEXER -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>    
+
+    <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
+    
+    <!-- Script do Bootstrap NÃO MEXER -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <!-- JS Bootstrap NÃO MEXER-->
+    <script src="js/scripts.js"></script>
+
+    <script>
+      const btnTopo = document.getElementById('btn-topo');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 400) {
+          btnTopo.classList.add('show');
+        } else {
+          btnTopo.classList.remove('show');
+        }
+      });
+      btnTopo.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+</body>
+</html>

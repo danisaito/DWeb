@@ -1,1 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-laranjafundo"> 
+  
+  <!-- Botão Voltar ao Topo -->
+    <button id="btn-topo" title="Voltar ao topo" style="position:fixed; bottom:32px; right:32px; z-index:9999; background:transparent; border:none; box-shadow:none; padding:0; cursor:pointer; width:60px; height:60px;">
+      <img src="assets/img/BotaoVoltarAoTopo.png" alt="Voltar ao topo" style="width:60px; height:60px; display:block;">
+    </button>
+
+      <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg bg-cianodesaturado sticky-top">
+        <div class="container-fluid ms-5">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/LogoPequena.png" alt="" style="width: 100px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-bege" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bege" href="contos.html">Contos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-bege" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resenhas
+                </a>
+                <ul class="dropdown-menu bg-cianodessaturado">
+                  <li><a class="dropdown-item text-bege" href="solidao.html">Solidão</a></li>
+                  <li><a class="dropdown-item text-bege" href="oPrimoBitu.html">O Primo Bitu</a></li> 
+                  <li><a class="dropdown-item text-bege" href="gaviaoVeioDoSulEPum.html">Gavião Veio do Sul e Pum!</a></li>
+                  <li><a class="dropdown-item text-bege" href="nosChoramosPeloCaoTinhoso.html">Nós Choramos Pelo Cão Tinhoso</a></li>                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bege" aria-current="page" href="autores.html">Autores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bege" href="index.html#Footer">Créditos</a>
+              </li>
+            </ul>
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+                </div>
+              </div>
+            <div class="search-container">
+        <div class="search-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+        </div>
+        <input type="text" class="form-control search-input" style="font-family: 'Parmigiano Sans Std Reg';" placeholder="Pesquisar..." aria-label="Campo de pesquisa">
+    </div>
+
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner com Logo -->
+    <header class="masthead" style="height: 550px; background-image: url('assets/img/FundoLogo.png')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <img src="assets/img/Logo.png" alt="Logo Contos Africanos" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+         <!-- Título da Página -->
+       <div class="container-fluid bg-laranjafundo py-3">
+        <img src="assets/img/IconeSobre.png" alt="" style="width: 400px; margin-left: 10%;">
+       </div>
+
+<!-- Seção de Apresentação -->
+<section>
+  <div class="py-1" style="margin-top: -60px;">
+    <div class="row align-items-center justify-content-center g-0">
+      <div class="col-12 col-md-8 col-lg-6 mx-auto">
+        <div style="margin-left: 0;">
+          <p class="mb-0" style="font-size: 1.25rem;">
+            Com o objetivo de expor a diversidade cultural afrodescendente, nosso site dispõe de uma estrutura lúdica. Procuramos incentivar a leitura de contos étnico-culturais de autores falantes da língua portuguesa, além de apresentar diversos autores presentes no livro analisado: "Contos africanos dos países de língua portuguesa" — Uma coletânea de obras dos mais distintos temas, incluindo a diversidade cultural encontrada na África, um continente gigante que abraça 54 nações em seu rico território.<br>
+            Conhecer outras culturas é importante para que expandamos nossa visão de mundo, promovamos a empatia e o respeito pelas diferenças, valorize as culturas do nosso mundo!
+          </p>
+        </div>
+      </div>
+     <div class="col-8 col-md-4 col-lg-3 d-flex justify-content-start align-items-start" style="margin-top:-30px; position:relative; min-width:130px; max-width:500px;">
+  <div class="img-sol-container" style="position:relative; width:100%; min-width:130px; max-width:550px;">
+    <img src="assets/img/ImagemSol.png" alt="Ícone Sol" class="img-fluid efeito-sol" style="max-height: 500px; min-width: 130px; object-fit: contain; margin-left:-18px;">
+    <img src="assets/img/ImagemSol2.png" alt="Ícone Sol 2" class="img-fluid efeito-sol-hover" style="max-height: 500px; min-width: 130px; object-fit: contain; margin-left:-18px;">
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+
+<div class="TrechoCultura">
+  <img src="assets/img/Cultura.png" alt="CulturaCulturaCultura">
+</div>
+
+
+
+
+ <!-- Seção do Livro -->
+       <div class="text-center row g-4">
+        <div class="col-12 col-lg-8 mx-auto">
+        <h1> <img src="assets/img/SetaResenha.png" alt="" style="width: 3%;">
+          O Livro
+          <img src="assets/img/SetaResenha2.png" alt="" style="width: 3%;">
+        </h1>
+        <img src="assets/img/CapadoLivro.png" alt="" style="max-height: 550px; min-width: 180px;">
+        <div  class="container-fluid mx-auto my-5" style="text-align: center; max-width: 55%; font-size: 1.1rem;">
+        <p style="text-align: center;">
+          “A África e o Brasil são separados por um oceano. O mar, porém, não é suficiente para afogar o que os une. Há semelhanças nos gestos, no paladar, no canto, em certa alegria melancólica e no colorido que invade o variado cotidiano de lá e cá.
+        </p>
+        <p  style="text-align: center;">
+          Em alguns casos — cinco, para ser preciso — a ligação se revela ainda mais forte: compartilhamos a mesma língua que Angola, Cabo Verde, Guiné-Bissau, Moçambique e São Tomé e Príncipe.
+        </p>
+        <p  style="text-align: center; width: 100%;" class="container-fluid mx-auto">
+          O que há de africano no Brasil está vivo entre nós, mas não cultivamos o que há de novo na África. Nos contos deste livro, todos de autores contemporâneos, descobrimos admirados a África atual. E descobrimos também novas palavras, tecidas pela distância. E então, ao perceber essas semelhanças e diferenças que nos unem, podemos de fato conhecer uns aos outros.”
+        </p>
+        </div>
+        </div>
+       </div>
+
+  <!-- Botão -->
+       <div class="d-flex justify-content-center">
+          <a href="https://www.coletivoleitor.com.br/livro/contos-africanos-dos-paises-de-lingua-portuguesa" target="_blank" class="text-decoration-none">
+              <button class="btn btn-primary px-4 py-2 rounded-pill bg-laranjaterroso" style="box-shadow: 4px 5px 10px 0 #490700; font-family: 'Chau Philomene One'; font-size: 1.2rem; margin-bottom: 50%;">
+                Confira o livro
+              </button>
+         </a>
+      </div>
+
+
+         <!-- Footer -->
+    <footer class="bg-cianodessaturado text-white py-4" id="Footer">
+  <div class="container">
+    <h4 class="text-center text-bege">Site educacional sem fins lucrativos</h4>
+    <p class="text-center text-bege">Realizado por alunos do Curso Integrado de Comunicação Visual (CV6B)</p>
+    
+    <div class="row py-5 my-5 border-top">
+      <!-- Logos -->
+      <div class="col-md-3 mb-3">
+        <div class="d-flex flex-wrap align-items-center gap-3">
+          <img src="assets/img/LogoAtica.png" alt="Logo Atica" class="img-fluid" style="max-width: 150px;">
+         <img src="assets/img/LogoIFSC.png" alt="Logo IFSC" class="img-fluid" style="max-width: 180px;">
+        </div>
+      </div>
+
+      <!-- Participação -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-bege">Participação</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="solidao.html" class="nav-link p-0 text-white">Solidão</a> — Júlia Souza Paz</li>
+          <li class="nav-item mb-2"><a href="oPrimoBitu.html" class="nav-link p-0 text-white">O Primo Bitu</a> — Mariana Eichenberg Alceno</li>
+          <li class="nav-item mb-2"><a href="gaviaoVeioDoSulEPum.html" class="nav-link p-0 text-white">Gavião Veio do Sul e Pum!</a> — Sofia Barroso Medeiros</li>
+          <li class="nav-item mb-2"><a href="nosChoramosPeloCaoTinhoso.html" class="nav-link p-0 text-white">Nós Choramos Pelo Cão Tinhoso</a> — Bianca Horst Kimura</li>
+        </ul>
+      </div>
+
+      <!-- Onde Ler -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-bege">Onde Ler</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://www.coletivoleitor.com.br/livro/contos-africanos-dos-paises-de-lingua-portuguesa" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer">Contos Africanos dos Países de Língua Portuguesa</a></li>
+          <li class="nav-item mb-2"><a href="https://www.amazon.com.br/Rosa-do-Riboque-outros-contos/dp/9722111566" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer">Rosa do Riboque e Outros Contos</a></li>
+          <li class="nav-item mb-2"><a href="https://sadacosta.com/livro/2203JS404/semear-em-po" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer">Semear em Pó</a></li>
+          <li class="nav-item mb-2"><a href="https://www.traca.com.br/livro/1427721/fogo-fala/" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer">O Fogo da Fala</a></li>
+          <li class="nav-item mb-2"><a href="https://www.amazon.com.br/Os-Minha-Rua-Ondjaki/dp/9722118633" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer">Os da Minha Rua</a></li>
+        </ul>
+      </div>
+
+      <!-- Contato -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-bege">Contato da Editora</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://atica.saber.com.br" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoAtica2.png" alt="" style="width: 10%;"> Site</a></li>
+          <li class="nav-item mb-2"><a href="https://atica.saber.com.br/contato/" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoEmail.png" alt="" style="width: 10%;"> E-mail</a></li>
+          <li class="nav-item mb-2"><a href="https://www.instagram.com/editora.atica/" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoInstagram.png" alt="" style="width: 10%;"> Instagram</a></li>
+          <li class="nav-item mb-2"><a href="https://www.facebook.com/aticascipione/?locale=pt_BR" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoFacebook.png" alt="" style="width: 10%;"> Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    </footer>
+
+     <!-- Widgets acessibilidade NÃO MEXER -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>    
+
+    <!--<script src="https://app.embed.im/accessibility.js" defer></script>-->
+    <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
+
+    <!-- Script do Bootstrap NÃO MEXER -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <!-- JS Bootstrap NÃO MEXER-->
+    <script src="js/scripts.js"></script>
+
+     <script>
+      const btnTopo = document.getElementById('btn-topo');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 400) {
+          btnTopo.classList.add('show');
+        } else {
+          btnTopo.classList.remove('show');
+        }
+      });
+      btnTopo.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+</body>
+</html>

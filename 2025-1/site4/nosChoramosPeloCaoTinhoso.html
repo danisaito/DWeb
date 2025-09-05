@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resenha Nós Choramos Pelo Cão Tinhoso</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="bg-bege"> 
+    <!-- Botão Voltar ao Topo -->
+    <button id="btn-topo" title="Voltar ao topo" style="position:fixed; bottom:32px; right:32px; z-index:9999; background:transparent; border:none; box-shadow:none; padding:0; cursor:pointer; width:60px; height:60px;">
+      <img src="assets/img/BotaoVoltarAoTopo.png" alt="Voltar ao topo" style="width:60px; height:60px; display:block;">
+    </button>
+
+     <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg bg-cianodesaturado sticky-top">
+        <div class="container-fluid ms-5">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/LogoPequena.png" alt="" style="width: 100px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-bege" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bege" href="contos.html">Contos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-bege" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resenhas
+                </a>
+                <ul class="dropdown-menu bg-cianodessaturado">
+                  <li><a class="dropdown-item text-bege" href="solidao.html">Solidão</a></li>
+                  <li><a class="dropdown-item text-bege" href="oPrimoBitu.html">O Primo Bitu</a></li> 
+                  <li><a class="dropdown-item text-bege" href="gaviaoVeioDoSulEPum.html">Gavião Veio do Sul e Pum!</a></li>
+                  <li><a class="dropdown-item text-bege" href="nosChoramosPeloCaoTinhoso.html">Nós Choramos Pelo Cão Tinhoso</a></li>                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bege" aria-current="page" href="autores.html">Autores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bege" href="nosChoramosPeloCaoTinhoso.html#Footer">Créditos</a>
+              </li>
+            </ul>
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+                </div>
+              </div>
+            <div class="search-container">
+        <div class="search-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+        </div>
+        <input type="text" class="form-control search-input" style="font-family: 'Parmigiano Sans Std Reg';" placeholder="Pesquisar..." aria-label="Campo de pesquisa">
+    </div>
+
+          </div>
+        </div>
+      </nav>
+
+      <!-- Título da Página -->
+       <div class="container-fluid bg-laranjafundo py-3">
+        <img src="assets/img/IconeResenhas.png" alt="" style="width: 300px;">
+
+       </div>
+
+
+      <!--Título do Conto-->
+        <div class="container-fluid bg-laranjabrilhante py-3">
+            <img src="assets/img/IconeAngola.png" alt="" width="60" height="60" class="ÍconePaís d-inline-block align-text-top">
+            <img src="assets/img/SetaTituloDoConto.png" alt="" width="20" height="60" class="d-inline-block align-text-top">
+            <h1 class="d-inline-block align-text-top">Nós Choramos Pelo Cão Tinhoso</h1>
+        </div>
+
+    
+
+    <!-- Bloco de Detalhes do Conto -->
+    <section class="book-detail py-5 bg-bege">
+        <div class="container">
+            <div class="row g-4 w-75 mx-auto">
+                <!-- Capa do Conto -->
+                <div class="col-md-6 col-lg-5 text-center">
+                        <div style="display: inline-block; position: relative; width: 75%; max-width: 400px;">
+                          <!-- Sombra esquerda -->
+                          <span style="position: absolute; top: 5px; left: -18px; width: 32px; height: 100%; min-height: 180px; max-height: 100%; z-index: 0; filter: blur(7px); background: var(--bs-verdedessaturado, #5e5b40); opacity: 0.7;"></span>
+                          <!-- Sombra inferior -->
+                          <span style="position: absolute; left: -5px; bottom: -18px; width: 100%; height: 32px; z-index: 0; filter: blur(7px); background: var(--bs-verdedessaturado, #5e5b40); opacity: 0.7;"></span>
+                          <img src="assets/img/CaoTinhosoCapa.png" alt="" class="img-fluid" style="position: relative; z-index: 1; width: 100%; height: auto;">
+                        </div>
+                </div>
+                
+                <!-- Informações do Conto -->
+                <div class="col-md-6 col-lg-7 mx-auto">
+                    <div class="Lista row mb-4">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-1"><strong>País:</strong> Angola <img src="assets/img/Angola.png" alt="🇦🇴" style="width: 25px; margin-left: 5px; margin-bottom: 5px;"></li>
+                                <li class="mb-1"><strong>Livro:</strong> Os da Minha Rua</li>
+                                <li class="mb-1"><strong>Publicação:</strong> 2007</li>
+                                <li class="mb-1"><strong>Leitura:</strong> 5 páginas</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-md-end align-items-start">
+                            <div class="d-flex align-items-center">
+                              <a href="autores.html#Ondjaki" class="text-decoration-none text-black">
+                                <span class="me-2 fw-medium d-block text-center"><strong>Autor:</strong><br>Ndalu de <br>Almeida<br> (Ondjaki)</span>
+                                </a>
+                                <a href="autores.html#Ondjaki">
+                                  <img class="author-icon" src="assets/img/IconeOndjaki.jpg" alt="Ícone Ondjaki">
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <p>
+                            No tempo do oitavo ano, na aula de português, o personagem apelidado de “Jacó” vive na pele a emoção causada pelo tocante conto de “Nós Matamos o Cão Tinhoso!” do escritor moçambicano Luis Bernardo Honwana. Nele, Ginho, o menino narrador, se torna cúmplice da morte de seu cão, mesmo sofrendo com o ocorrido.<br> 
+                            Assim como Ginho, Jacó se vê diante de uma realidade dura demais para a idade que tem, e ao mesmo tempo, intensamente reveladora. Ele se vê dividido entre seus sentimentos e suas expectativas.
+                        </p>
+                    </div>
+                    <div>
+                        <p class="small text-muted" style="font-size: 0.7rem;">
+                            in: CHAVES, Rita (Sel. e org.). Contos Africanos dos países de língua portuguesa. São Paulo: Ática, 2009. p. 106-110. (Para gostar de Ler v.44). Fonte: Língua Portuguesa - Se liga na língua - Literatura, Produção de texto, Linguagem - 2 Ensino Médio - 1 edição - São Paulo, 2016 - Moderna - p. 111-3.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Resenha -->
+    <section>
+        <div class="container bg-bege py-4">
+            <h2 class="ResenhaDestaque text-center my-5"> <img src="assets/img/SetaResenha.png" alt="" style="width: 2%; margin-right: 2%;">Resenha <img src="assets/img/SetaResenha2.png" alt="" style="width: 2%; margin-right: 2%;"></h2>
+            <div class="row g-4 col-lg-9 mx-auto">
+                <div class="col-12">
+                    <p>
+                        “Nós Choramos Pelo Cão Tinhoso” é um dos contos presentes no livro “Os da Minha Rua” (2007) do autor angolano Ndalu de Almeida, mais conhecido pelo pseudônimo “Ondjaki”.
+                    </p>
+                    <p>
+                        A história é narrada pela perspectiva do personagem apelidado de “Jacó”, um estudante luandense da oitava série, situado na escola Mutu Ya Kevela em 1990, durante a guerra civil Angolana. Ondjaki faz o uso da metalinguística e da intertextualidade ao referenciar elementos diretos do conto “Nós Matamos o Cão Tinhoso!” (1964) do renomado autor moçambicano Luís Bernardo Honwana, utilizando da introspecção do personagem para projetar uma ponderação ao leitor sobre o amadurecimento dos jovens e os papeis que tais são submetidos a assumir desde cedo, assim como o impacto da leitura como meio de reflexão. A narrativa retrata, também, o período de medo e opressão experienciado pelos angolanos em seu contexto sócio-histórico, com a rejeição da emotividade perante à violência, especialmente quando vinda de um garoto adolescente. 
+                    </p>
+                </div>
+                <div class="col-12">
+                    <img src="assets/img/Lendo_o_Conto.png" class="img-fluid rounded mx-auto d-block mb-4" alt="Lendo o Conto" style="max-width: 47vw;">
+                </div>
+                <div class="col-12">
+                    <p>
+                        A obra é estruturada em uma cronologia linear, ocasionalmente mencionando momentos passados em que Jacó lera o conto pela primeira vez quando estava na sexta série, também mencionando crer que tal aparenta estar mais macabro no momento atual. 
+                        A primeira parte da narrativa trata do início da leitura coletiva do conto durante a aula de português, apresentando um tom mais humorístico e infantil antes do pesar da história. A segunda parte revela a transformação de Jacó e seus colegas com o decorrer do texto, onde todos passam a compreender a seriedade da narrativa e a necessidade de assumir uma postura controlada. Na terceira e última parte, aborda-se o momento de Jacó finalizar a leitura do texto, sendo entregue a assustadora responsabilidade de pronunciar o momento mais trágico da história. 
+                    </p>
+                </div>
+                <div class="col-17">
+                    <img src="assets/img/CaoLatindo.png" class="img-fluid rounded mx-auto d-block mb-4" alt="Cão Latindo">
+                </div>
+                <div class="col-12">
+                    <p>
+                        Ao todo, o conto demonstra o poder da literatura como catalisador de transformações pessoais. No começo da história, somos apresentados ao ambiente da sala de aula e aos colegas de Jacó, também sendo introduzidos ao conto referenciado em breves sinopses descritas pelo garoto: Ginho, o personagem principal, junto de seus colegas de sala, são ordenados a matar o vira-lata conhecido por “Cão Tinhoso”, um cachorro maltratado porém querido para Ginho e sua colega Isaura.  Jacó demonstra gostar muito do conto, apesar de pronunciar se sentir profundamente tocado pelas imagens evocadas durante sua leitura: 
+                    </p>
+                </div>
+                <div class="col-12">
+                    <img src="assets/img/NuncaMeEsqueci.png" class="img-fluid rounded mx-auto d-block mb-4" alt="Nunca Me Esqueci">
+                </div>
+                <div class="col-12">
+                    <p>
+                        Com o avançar da narrativa de Honwana, o ambiente descontraído da sala de aula cessa. Os amigos de Jacó, que inicialmente competiam por quem lê mais rápido, passam a temer os próximos parágrafos, sendo semelhantemente perceptível a tensão da professora. Jacó passa a enxergar sua própria turma refletida no grupo de personagens do conto original, no que se diz respeito à responsabilidade imposta à ambos os jovens de contribuir à uma violência que eles próprios não compreendem plenamente. Uma vez, que, ao reler aquele conto coletivamente, estavam todos participando do sofrimento do Cão Tinhoso de maneira impotente. 
+                    </p>
+                </div>
+                <div class="col-12">
+                    <img src="assets/img/BoysDontCry.png" class="img-fluid rounded mx-auto d-block mb-4" alt="Boys Don't Cry">
+                </div>
+                <div class="col-12">
+                    <p>
+                        A narrativa se intensifica até o momento final em que Jacó deve concluir a leitura, com os olhares vidrados dos colegas e o nó em sua garganta tornando o ato de ler um fardo tão pesado quanto aquele sentenciado a Ginho. Nesse momento, ademais, Ondjaki demonstra que além do meio fictício no qual os personagens são inseridos através da leitura, a experiência de sua própria realidade também recria ativamente um ambiente de opressão. Diante da inquietação de Jacó, apesar do desconforto mútuo compartilhado entre todos aqueles presentes, é anunciado por um colega que “Quem chorar é maricas então!”, e Jacó se vê pressionado a se atentar não apenas ao texto como também à conformidade.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <p>
+                        De forma significativa, o conto não se encerra com alívio ou resolução, mas sim com um silêncio que expressa tudo que não pode ser dito ou sentido publicamente por um garoto que deve se demonstrar forte em tempos de guerra. 
+                    </p>
+                </div>
+                <div class="col-12">
+                    <img src="assets/img/HomemNaoChora.png" class="img-fluid rounded mx-auto d-block mb-4" alt="Homem Não Chora">
+                </div>
+                <div class="col-12">
+                    <p>
+                        Nós Choramos Pelo Cão Tinhoso é uma impactante homenagem literária que leva os espectadores a observarem sua própria experiência quanto leitores através de Jacó. É, também, de considerável interesse ressaltar que da mesma forma que Honwana ilustra em seu conto a trajetória de um menino que, não só assiste à morte de um ser rejeitado pelos poderes sociais, como também participa dessa morte, Ondjaki denuncia como esse ciclo se repete em tais situações cotidianas, com ambos os contos simbolizando as consequências da repressão sofrida pelos angolanos e moçambicanos durante o período de colonização, assim como as respectivas guerras que decorreram em cada país.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <p>
+                        Em conclusão, o conto de Ondjaki é um exemplar essencial da nova geração de escritores africanos para aqueles que buscam se imergir nas percepções angolanas e conhecer os clássicos dos diversos países africanos de língua portuguesa, servindo como um excelente introdutório para “Nós Matamos o Cão Tinhoso!”, intrigando os leitores à conhecer a história lida pelos alunos sem revelar muito da trama, sendo ainda mais tocante de reler-se após conferir a obra de Honwana. 
+                    </p>
+                </div>
+                <div class="col-12 text-center">
+                    <img src="assets/img/CaoFinal.png" class="img-fluid rounded mx-auto d-block mb-4" alt="Cão Final" style="max-width: 47vw;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Hyperlink Autor -->
+     <section>
+        <div class="ResenhaDestaque container bg-bege py-4 d-flex justify-content-center" style="min-height: 350px; max-width: 600px;">
+            <div class="d-flex align-items-center" style="gap: 10px;">
+                <img class="author-icon" src="assets/img/IconeOndjaki.jpg" alt="Ícone Ondjaki" style="width: 90px; height: 90px; flex-shrink: 0;">
+                <img src="assets/img/SetaResenha.png" alt="" width="20" height="50" class="d-inline-block align-text-top" style="flex-shrink: 0;">
+                <a href="autores.html#Ondjaki" class="text-verdedessaturado text-decoration-underline" style="text-decoration-thickness: auto;">
+                  <h3 class="mb-0 text-start" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Saiba mais sobre o autor</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+     
+         <!-- Footer -->
+    <footer class="bg-cianodessaturado text-white py-4" id="Footer">
+  <div class="container">
+    <h4 class="text-center text-bege">Site educacional sem fins lucrativos</h4>
+    <p class="text-center text-bege">Realizado por alunos do Curso Integrado de Comunicação Visual (CV6B)</p>
+    
+    <div class="row py-5 my-5 border-top">
+      <!-- Logos -->
+      <div class="col-md-3 mb-3">
+        <div class="d-flex flex-wrap align-items-center gap-3">
+          <img src="assets/img/LogoAtica.png" alt="Logo Atica" class="img-fluid" style="max-width: 150px;">
+          <img src="assets/img/LogoIFSC.png" alt="Logo IFSC" class="img-fluid" style="max-width: 180px;">
+        </div>
+      </div>
+
+      <!-- Participação -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-bege">Participação</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="solidao.html" class="nav-link p-0 text-white">Solidão</a> — Júlia Souza Paz</li>
+          <li class="nav-item mb-2"><a href="oPrimoBitu.html" class="nav-link p-0 text-white">O Primo Bitu</a> — Mariana Eichenberg Alceno</li>
+          <li class="nav-item mb-2"><a href="gaviaoVeioDoSulEPum.html" class="nav-link p-0 text-white">Gavião Veio do Sul e Pum!</a> — Sofia Barroso Medeiros</li>
+          <li class="nav-item mb-2"><a href="nosChoramosPeloCaoTinhoso.html" class="nav-link p-0 text-white">Nós Choramos Pelo Cão Tinhoso</a> — Bianca Horst Kimura</li>
+        </ul>
+      </div>
+
+      <!-- Onde Ler -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-bege">Onde Ler</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://www.coletivoleitor.com.br/livro/contos-africanos-dos-paises-de-lingua-portuguesa" class="nav-link p-0 text-white" target="_blank">Contos Africanos dos Países de Língua Portuguesa</a></li>
+          <li class="nav-item mb-2"><a href="https://www.amazon.com.br/Rosa-do-Riboque-outros-contos/dp/9722111566" class="nav-link p-0 text-white">Rosa do Riboque e Outros Contos</a></li>
+          <li class="nav-item mb-2"><a href="https://sadacosta.com/livro/2203JS404/semear-em-po" class="nav-link p-0 text-white">Semear em Pó</a></li>
+          <li class="nav-item mb-2"><a href="https://www.traca.com.br/livro/1427721/fogo-fala/" class="nav-link p-0 text-white">O Fogo da Fala</a></li>
+          <li class="nav-item mb-2"><a href="https://www.amazon.com.br/Os-Minha-Rua-Ondjaki/dp/9722118633" class="nav-link p-0 text-white">Os da Minha Rua</a></li>
+        </ul>
+      </div>
+
+      <!-- Contato -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-bege">Contato da Editora</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://atica.saber.com.br" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoAtica2.png" alt="" style="width: 10%;"> Site</a></li>
+          <li class="nav-item mb-2"><a href="https://atica.saber.com.br/contato/" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoEmail.png" alt="" style="width: 10%;"> E-mail</a></li>
+          <li class="nav-item mb-2"><a href="https://www.instagram.com/editora.atica/" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoInstagram.png" alt="" style="width: 10%;"> Instagram</a></li>
+          <li class="nav-item mb-2"><a href="https://www.facebook.com/aticascipione/?locale=pt_BR" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoFacebook.png" alt="" style="width: 10%;"> Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    </footer>
+
+      <!-- Widgets acessibilidade NÃO MEXER -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>    
+
+    <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
+
+    <!-- Script do Bootstrap NÃO MEXER -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <!-- JS Bootstrap NÃO MEXER-->
+    <script src="js/scripts.js"></script>
+
+     <script>
+      const btnTopo = document.getElementById('btn-topo');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 400) {
+          btnTopo.classList.add('show');
+        } else {
+          btnTopo.classList.remove('show');
+        }
+      });
+      btnTopo.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+
+</body>
+</html>

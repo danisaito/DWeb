@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resenha O Primo Bitu</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+     <style>
+      .img-fluid-responsive {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+      }
+      @media (max-width: 900px) {
+        .container.bg-bege.py-4 {
+          width: 98vw !important;
+          min-width: unset !important;
+        }
+      }
+    </style>
+
+</head>
+<body class="bg-bege"> 
+  <!-- Botão Voltar ao Topo -->
+    <button id="btn-topo" title="Voltar ao topo" style="position:fixed; bottom:32px; right:32px; z-index:9999; background:transparent; border:none; box-shadow:none; padding:0; cursor:pointer; width:60px; height:60px;">
+      <img src="assets/img/BotaoVoltarAoTopo.png" alt="Voltar ao topo" style="width:60px; height:60px; display:block;">
+    </button>
+
+       <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg bg-cianodesaturado sticky-top">
+        <div class="container-fluid ms-5">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/LogoPequena.png" alt="" style="width: 100px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-bege" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bege" href="contos.html">Contos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-bege" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resenhas
+                </a>
+                <ul class="dropdown-menu bg-cianodessaturado">
+                  <li><a class="dropdown-item text-bege" href="solidao.html">Solidão</a></li>
+                  <li><a class="dropdown-item text-bege" href="oPrimoBitu.html">O Primo Bitu</a></li> 
+                  <li><a class="dropdown-item text-bege" href="gaviaoVeioDoSulEPum.html">Gavião Veio do Sul e Pum!</a></li>
+                  <li><a class="dropdown-item text-bege" href="nosChoramosPeloCaoTinhoso.html">Nós Choramos Pelo Cão Tinhoso</a></li>                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bege" aria-current="page" href="autores.html">Autores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bege" href="oPrimoBitu.html#Footer">Créditos</a>
+              </li>
+            </ul>
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+                </div>
+              </div>
+            <div class="search-container">
+        <div class="search-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+        </div>
+        <input type="text" class="form-control search-input" style="font-family: 'Parmigiano Sans Std Reg';" placeholder="Pesquisar..." aria-label="Campo de pesquisa">
+    </div>
+
+          </div>
+        </div>
+      </nav>
+
+      <!-- Título da Página -->
+       <div class="container-fluid bg-laranjafundo py-3">
+        <img src="assets/img/IconeResenhas.png" alt="" style="width: 300px;">
+
+       </div>
+
+            
+
+      <!--Título do Conto-->
+      <div class="container-fluid bg-laranjabrilhante py-3">
+        <img src="assets/img/IconeAngola.png" alt="" width="60" height="60" class="ÍconePaís d-inline-block align-text-top">
+        <img src="assets/img/SetaTituloDoConto.png" alt="" width="20" height="60" class="d-inline-block align-text-top">
+        <h1 class="d-inline-block align-text-top">O Primo Bitu</h1>
+    </div>
+
+    
+
+<!-- Bloco de Detalhes do Conto -->
+<section class="book-detail py-5 bg-bege">
+    <div class="container">
+        <div class="row g-4 w-75 mx-auto">
+            <!-- Capa do Conto -->
+            <div class="col-md-6 col-lg-5 text-center">
+                        <div style="display: inline-block; position: relative; width: 75%; max-width: 400px;">
+                          <!-- Sombra esquerda -->
+                          <span style="position: absolute; top: 5px; left: -18px; width: 32px; height: 100%; min-height: 180px; max-height: 100%; z-index: 0; filter: blur(7px); background: var(--bs-verdedessaturado, #5e5b40); opacity: 0.7;"></span>
+                          <!-- Sombra inferior -->
+                          <span style="position: absolute; left: -5px; bottom: -18px; width: 100%; height: 32px; z-index: 0; filter: blur(7px); background: var(--bs-verdedessaturado, #5e5b40); opacity: 0.7;"></span>
+                          <img src="assets/img/primobitu.jpeg" alt="" class="img-fluid" style="position: relative; z-index: 1; width: 100%; height: auto;">
+                        </div>
+                </div>
+            
+            <!-- Informações do Conto -->
+            <div class="col-md-6 col-lg-7 mx-auto">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-1"><strong>País:</strong> Cabo Verde <img src="assets/img/CaboVerde.png" alt="🇨🇻" style="width: 25px; margin-left: 5px; margin-bottom: 5px;"></li>
+                            <li class="mb-1"><strong>Livro:</strong> Semear em pó</li>
+                            <li class="mb-1"><strong>Publicação:</strong> 1994</li>
+                            <li class="mb-1"><strong>Leitura:</strong> 6 páginas</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-md-end align-items-start">
+                        <div class="d-flex align-items-center" style="font-family: 'TT Chocolates';">
+                          <a href="autores.html#Fatima" class="text-decoration-none text-black">
+                            <span class="me-2 fw-medium d-block text-center"><strong>Autora:</strong><br>Fátima <br>Bettencourt<br></span>
+                            </a>
+                            <a href="autores.html#Fatima">
+                              <img class="author-icon" src="assets/img/11533546.normal.jpg" alt="Fátima Bettencourt">
+                              </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-4">
+                    <p>
+                      Semear em Pó é um feixe de recordações e informações de infância. numa linguagem fluente onde as palavras se combinam para nos fazer viajar no tempo para o espaço do universo belo e querido.
+É constituída de curtas crónicas em que as circunstâncias não são imaginadas mas sim vividas: As observações são perspicazes e solidificam a memória. O conto “O Primo Bitu”, presente no livro feito por Fátima mostra as memórias e o afeto, vividos por ela.<br> 
+                        
+                    </p>
+                </div>
+                 <div>
+                        <p class="small text-muted" style="font-size: 0.7rem;">
+                            in: CHAVES, Rita (Sel. e org.). Contos Africanos dos países de língua portuguesa. São Paulo: Ática, 2009. p. 106-110. (Para gostar de Ler v.44). Fonte: Língua Portuguesa - Se liga na língua - Literatura, Produção de texto, Linguagem - 2 Ensino Médio - 1 edição - São Paulo, 2016 - Moderna - p. 111-3.
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+      <!-- Conteúdo da Página -->
+
+
+<!-- Resenha -->
+<section>
+  <div class="container bg-bege py-4" style="min-height: 990px; max-width: 1000px; width: 100%;">
+      <h2 class="ResenhaDestaque text-center my-5"> <img src="assets/img/SetaResenha.png" alt="" class="img-fluid" style="width: 2%; margin-right: 2%;">Resenha <img src="assets/img/SetaResenha2.png" alt="" class="img-fluid" style="width: 2%; margin-right: 2%;"></h2>
+      <p>
+          “O Primo Bitu” é um dos contos presentes no livro “Semear em Pó” de 1994, uma coletânea de histórias vividas pela autora Hirondina de Fátima Bettencourt Santos.</p> 
+      <p>
+         O conto gira em torno da chegada anual de um parente distante à casa da família no dia de Ano Novo. Concentrado no ponto de vista das crianças, que brincavam felizes, e no desconforto diante da visita, com a aparência incomum — casaco, bengala, olhar turvo, era assustadora, e seu silêncio trazia curiosidade e temor. Mas era muito elogiado pelos familiares, e voltavam a atenção toda a servir o Primo, o que as crianças não compreendiam, justamente pela quietude. 
+       
+      </p>
+      <div class="col-18">
+        <img src="assets/img/bit.png" class="img-fluid-responsive rounded mx-auto d-block mb-4" alt="">
+      </div>
+      <p>
+        A autora descreve sensorialmente o ambiente, com o barulho das brincadeiras e o silêncio incômodo que o primo causava, o que de forma sutil, revela os conflitos internos, como a necessidade de respeitar as tradições, mesmo quando causam desconforto ou insatisfação.  
+        O estilo realista e sensorial de Bettencourt enriquece o conto, há costumes cabo-verdianos na transmissão de valores e comportamentos, passados de geração em geração. A tensão entre o acolhimento dos adultos e o medo das crianças, mostra o quão complexo pode ser as relações familiares diante de tradições.  
+      </p>
+      <div class="col-18">
+        <img src="assets/img/casa.png" class="img-fluid-responsive rounded mx-auto d-block mb-4" alt="">
+      </div>
+
+      <p>
+        O Determinismo está muito presente no conto, através das caracteristicas atribuídas ao Bitu, que criaram um “pré conceito” sobre como ele é.
+        E a Lembranças/nostalgia, que são trazidas por Fátima não só no conto o Primo Bitu, mas wm todo o livro "Semear em pó", que são lembranças da autora sobre a infância em que ela viveu. 
+      </p>
+      <div class="col-18">
+        <img src="assets/img/bit2.png" class="img-fluid-responsive rounded mx-auto d-block mb-4" alt="">
+      </div>
+      <p>A linguagem é de certa forma simples, sendo objetiva “direto ao ponto”, sem abstrações. mas carrega atmosferas intensas.
+        Voltada ao público junevil, por ser um conto africano, pode interessar também a leitores de todas as idades que desejam conhecer mais sobre a cultura e tradições africanas e países lusófonos.
+      </p>
+</section>
+
+ <!-- Hyperlink Autor -->
+ <section>
+  <div class="ResenhaDestaque container bg-bege py-4 d-flex justify-content-center" style="min-height: 350px; max-width: 600px;">
+      <div class="d-flex align-items-center" style="gap: 10px;">
+          <img class="author-icon" src="assets/img/11533546.normal.jpg" alt="Ícone Ondjaki" style="width: 90px; height: 90px; flex-shrink: 0;">
+          <img src="assets/img/SetaResenha.png" alt="" width="20" height="50" class="d-inline-block align-text-top" style="flex-shrink: 0;">
+          <a href="autores.html#Fatima" class="text-verdedessaturado text-decoration-underline" style="text-decoration-thickness: auto;">
+            <h3 class="mb-0 text-start" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Saiba mais sobre o autor</h3>
+          </a>
+      </div>
+  </div>
+</section>
+
+
+         <!-- Footer -->
+    <footer class="bg-cianodessaturado text-white py-4" id="Footer">
+  <div class="container">
+    <h4 class="text-center text-bege">Site educacional sem fins lucrativos</h4>
+    <p class="text-center text-bege">Realizado por alunos do Curso Integrado de Comunicação Visual (CV6B)</p>
+    
+    <div class="row py-5 my-5 border-top">
+      <!-- Logos -->
+      <div class="col-md-3 mb-3">
+        <div class="d-flex flex-wrap align-items-center gap-3">
+          <img src="assets/img/LogoAtica.png" alt="Logo Atica" class="img-fluid" style="max-width: 150px;">
+          <img src="assets/img/LogoIFSC.png" alt="Logo IFSC" class="img-fluid" style="max-width: 180px;">
+        </div>
+      </div>
+
+      <!-- Participação -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-bege">Participação</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="solidao.html" class="nav-link p-0 text-white">Solidão</a> — Júlia Souza Paz</li>
+          <li class="nav-item mb-2"><a href="oPrimoBitu.html" class="nav-link p-0 text-white">O Primo Bitu</a> — Mariana Eichenberg Alceno</li>
+          <li class="nav-item mb-2"><a href="gaviaoVeioDoSulEPum.html" class="nav-link p-0 text-white">Gavião Veio do Sul e Pum!</a> — Sofia Barroso Medeiros</li>
+          <li class="nav-item mb-2"><a href="6-NósChoramosPeloCãoTinhoso.html" class="nav-link p-0 text-white">Nós Choramos Pelo Cão Tinhoso</a> — Bianca Horst Kimura</li>
+        </ul>
+      </div>
+
+      <!-- Onde Ler -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-bege">Onde Ler</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://www.coletivoleitor.com.br/livro/contos-africanos-dos-paises-de-lingua-portuguesa" class="nav-link p-0 text-white">Contos Africanos dos Países de Língua Portuguesa</a></li>
+          <li class="nav-item mb-2"><a href="https://www.amazon.com.br/Rosa-do-Riboque-outros-contos/dp/9722111566" class="nav-link p-0 text-white">Rosa do Riboque e Outros Contos</a></li>
+          <li class="nav-item mb-2"><a href="https://sadacosta.com/livro/2203JS404/semear-em-po" class="nav-link p-0 text-white">Semear em Pó</a></li>
+          <li class="nav-item mb-2"><a href="https://www.traca.com.br/livro/1427721/fogo-fala/" class="nav-link p-0 text-white">O Fogo da Fala</a></li>
+          <li class="nav-item mb-2"><a href="https://www.amazon.com.br/Os-Minha-Rua-Ondjaki/dp/9722118633" class="nav-link p-0 text-white">Os da Minha Rua</a></li>
+        </ul>
+      </div>
+
+     <!-- Contato -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-bege">Contato da Editora</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://atica.saber.com.br" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoAtica2.png" alt="" style="width: 10%;"> Site</a></li>
+          <li class="nav-item mb-2"><a href="https://atica.saber.com.br/contato/" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoEmail.png" alt="" style="width: 10%;"> E-mail</a></li>
+          <li class="nav-item mb-2"><a href="https://www.instagram.com/editora.atica/" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoInstagram.png" alt="" style="width: 10%;"> Instagram</a></li>
+          <li class="nav-item mb-2"><a href="https://www.facebook.com/aticascipione/?locale=pt_BR" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoFacebook.png" alt="" style="width: 10%;"> Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    </footer>
+
+<!-- Widgets acessibilidade NÃO MEXER -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>    
+
+<script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
+
+<!-- Script do Bootstrap NÃO MEXER -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- JS Bootstrap NÃO MEXER-->
+<script src="js/scripts.js"></script>
+
+ <script>
+      const btnTopo = document.getElementById('btn-topo');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 400) {
+          btnTopo.classList.add('show');
+        } else {
+          btnTopo.classList.remove('show');
+        }
+      });
+      btnTopo.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resenha Solidão</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+ <style>
+      .img-fluid-responsive {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media (max-width: 1100px) {
+        .container.bg-bege.py-4 {
+          width: 99vw !important;
+          min-width: unset !important;
+          max-width: 100vw !important;
+          padding-left: 2vw;
+          padding-right: 2vw;
+        }
+      }
+      @media (max-width: 767.98px) {
+        .container.bg-bege.py-4 {
+          width: 100vw !important;
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    </style>
+
+</head>
+<body class="bg-bege">
+        <!-- Botão Voltar ao Topo -->
+    <button id="btn-topo" title="Voltar ao topo" style="position:fixed; bottom:32px; right:32px; z-index:9999; background:transparent; border:none; box-shadow:none; padding:0; cursor:pointer; width:60px; height:60px;">
+      <img src="assets/img/BotaoVoltarAoTopo.png" alt="Voltar ao topo" style="width:60px; height:60px; display:block;">
+    </button>
+
+
+       <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg bg-cianodesaturado sticky-top">
+        <div class="container-fluid ms-5">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/LogoPequena.png" alt="" style="width: 100px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-bege" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bege" href="contos.html">Contos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-bege" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resenhas
+                </a>
+                <ul class="dropdown-menu bg-cianodessaturado">
+                  <li><a class="dropdown-item text-bege" href="solidao.html">Solidão</a></li>
+                  <li><a class="dropdown-item text-bege" href="oPrimoBitu.html">O Primo Bitu</a></li> 
+                  <li><a class="dropdown-item text-bege" href="gaviaoVeioDoSulEPum.html">Gavião Veio do Sul e Pum!</a></li>
+                  <li><a class="dropdown-item text-bege" href="nosChoramosPeloCaoTinhoso.html">Nós Choramos Pelo Cão Tinhoso</a></li>                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bege" aria-current="page" href="autores.html">Autores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bege" href="solidao.html#Footer">Créditos</a>
+              </li>
+            </ul>
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                  <div class="vw-plugin-top-wrapper"></div>
+                </div>
+              </div>
+            <div class="search-container">
+        <div class="search-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+        </div>
+        <input type="text" class="form-control search-input" style="font-family: 'Parmigiano Sans Std Reg';" placeholder="Pesquisar..." aria-label="Campo de pesquisa">
+    </div>
+
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- Título da Página -->
+       <div class="container-fluid bg-laranjafundo py-3">
+        <img src="assets/img/IconeResenhas.png" alt="" style="width:300px;">
+
+       </div>
+
+
+      <!--Título do Conto-->
+<div class="container-fluid bg-laranjabrilhante py-3">
+  <img src="assets/img/IconeSaoTomeEPrincipe.png" alt="" width="60" height="60" class="ÍconePaís d-inline-block align-text-top">
+  <img src="assets/img/SetaTituloDoConto.png" alt="" width="20" height="60" class="d-inline-block align-text-top">
+  <h1 class="d-inline-block align-text-top">Solidão</h1>
+</div>
+
+
+
+<!-- Bloco de Detalhes do Conto -->
+<section class="book-detail py-5 bg-bege">
+<div class="container">
+  <div class="row g-4 w-75 mx-auto">
+      <!-- Capa do Conto -->
+                <div class="col-md-6 col-lg-5 text-center">
+                        <div style="display: inline-block; position: relative; width: 75%; max-width: 400px;">
+                          <!-- Sombra esquerda -->
+                          <span style="position: absolute; top: 5px; left: -18px; width: 32px; height: 100%; min-height: 180px; max-height: 100%; z-index: 0; filter: blur(7px); background: var(--bs-verdedessaturado, #5e5b40); opacity: 0.7;"></span>
+                          <!-- Sombra inferior -->
+                          <span style="position: absolute; left: -5px; bottom: -18px; width: 100%; height: 32px; z-index: 0; filter: blur(7px); background: var(--bs-verdedessaturado, #5e5b40); opacity: 0.7;"></span>
+                          <img src="assets/img/Inicio.png" alt="" class="img-fluid" style="position: relative; z-index: 1; width: 100%; height: auto;">
+                        </div>
+                </div>
+      
+      <!-- Informações do Conto -->
+      <div class="col-md-6 col-lg-7 mx-auto">
+          <div class="Lista row mb-4">
+              <div class="col-md-6">
+                  <ul class="list-unstyled">
+                      <li class="mb-1"><strong>País:</strong> São Tomé e Príncipe <img src="assets/img/SaoTome.png" alt="🇸🇹" style="width: 25px; margin-left: 5px;"></li>
+                      <li class="mb-1"><strong>Livro:</strong> Rosa do Riboque e Outros Contos</li>
+                      <li class="mb-1"><strong>Publicação:</strong> 1985</li>
+                      <li class="mb-1"><strong>Leitura:</strong> 8 páginas</li>
+                  </ul>
+              </div>
+              <div class="col-md-6 d-flex justify-content-md-end align-items-start">
+                  <div class="d-flex align-items-center">
+                    <a href="autores.html#Braganca" class="text-decoration-none text-black">
+                      <span class="me-2 fw-medium d-block text-center"><strong>Autor:</strong><br>Albertino <br>Bragança<br></span>
+                      </a>
+                      <a href="autores.html#Braganca" class="text-decoration-none text-black">
+                        <img class="author-icon" src="assets/img/albertinobraganca.png" alt="Albertinno Bragança">
+                        </a>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="mb-4">
+              <p>
+                Mento Muala, protagonista do conto a seguir, poderia ser um personagem de Jorge Amado. Ou então figurar em alguma canção de Dorival Caymmi. Mesmo não estando na Bahia, mas em São Tomé e Príncipe, Mento se assemelha ao personagem muitas vezes retratado na literatura, nas artes plásticas e nas canções brasileiras: o malandro. E como qualquer malandro que se preza, ao lado da ginga e malemolència, Mento Muala guarda em si sua dose de melancolia destilada pouco a pouco em sua história.
+                
+              </p>
+          </div>
+          <div>
+                        <p class="small text-muted" style="font-size: 0.7rem;">
+                            in: CHAVES, Rita (Sel. e org.). Contos Africanos dos países de língua portuguesa. São Paulo: Ática, 2009. p. 106-110. (Para gostar de Ler v.44). Fonte: Língua Portuguesa - Se liga na língua - Literatura, Produção de texto, Linguagem - 2 Ensino Médio - 1 edição - São Paulo, 2016 - Moderna - p. 111-3.
+                        </p>
+                    </div>
+      </div>
+  </div>
+</div>
+</section>
+
+
+<!-- Resenha -->
+<section>
+<div class="container bg-bege py-4" style="min-height: 2000px; max-width:1000px;width:100%;">
+  <h2 class="ResenhaDestaque text-center my-5">
+    <img src="assets/img/SetaResenha.png" alt="" style="width: 2%; margin-right: 2%;">Resenha
+    <img src="assets/img/SetaResenha2.png" alt="" style="width: 2%; margin-right: 2%;">
+  </h2>
+  
+  <p>
+    No conto Solidão, Albertino Bragança desnuda, com uma delicadeza cortante, as feridas mais íntimas da existência humana. Ambientado em São Tomé e Príncipe, o texto nos conduz por entre os silêncios de um velho que, mesmo cercado pela natureza exuberante e pelo calor de sua terra, habita um deserto interior profundo e intransponível.
+  </p>
+  <div>
+    <img src="assets/img/solidaoimagem1.png" class="img-fluid-responsive rounded mb-4" alt="">
+  </div>
+  <p>
+    Bragança escreve com uma sensibilidade que toca o invisível. A solidão do protagonista não é barulhenta, não grita, ela sussurra em cada gesto esquecido, em cada olhar lançado ao vazio, em cada lembrança que escapa por entre os dedos da memória. Há algo de universal nesse abandono: o autor não fala apenas de um homem, mas de todos nós, em algum momento da vida, quando o tempo parece escorrer sem testemunhas.
+    A prosa é enxuta, mas carregada de emoção. As palavras têm o peso exato do silêncio que carregam. A paisagem são-tomense, longe de ser apenas pano de fundo, pulsa como uma personagem viva: bela, quente, mas também indiferente à dor daquele homem que já não espera mais nada, senão o fim.
+  </p>
+  <div>
+    <img src="assets/img/solidaoimagem2.png" class="img-fluid-responsive rounded mb-4" alt="">
+  </div>
+ 
+  <p>
+    E é aqui que podemos traçar um paralelo simbólico e poderoso com a figura de Zé Pilintra, entidade cultuada na Umbanda e na Jurema. Zé Pilintra, ou popularmente conhecido como Malandro, em vida, teria sido um homem do povo, malandro de chapéu branco e terno alinhado, que transitava entre mundos: o dos humildes e o dos poderosos, o da rua e o do sagrado. Era figura de respeito, mas também de marginalidade, alguém que conhecia tanto a dor quanto o riso, tanto a carência quanto a astúcia.
+  </p>
+  <div>
+    <img src="assets/img/solidaoimagem3.png" class="img-fluid-responsive rounded mb-4" alt="">
+  </div>
+  <p>
+    O conto é um grito mudo contra o esquecimento, uma reflexão poderosa sobre o que nos resta quando tudo: amores, juventude, esperança, nos abandona. Em Solidão, Albertino Bragança não oferece respostas fáceis, mas nos convida a olhar para dentro, onde talvez habite uma dor semelhante.
+    É impossível sair ileso da leitura. Bragança nos entrega um espelho sombrio, mas necessário. E é justamente nesse desconforto, nesse nó na garganta que o conto se revela inesquecível.
+  </p>
+  <div>
+    <img src="assets/img/solidaoimagem4.png" class="img-fluid-responsive rounded mb-4" alt="">
+  </div>
+</div>
+</section>
+
+<!-- Hyperlink Autor -->
+<section>
+  <div class="ResenhaDestaque container bg-bege py-4 d-flex justify-content-center" style="min-height: 350px; max-width: 600px;">
+      <div class="d-flex align-items-center" style="gap: 10px;">
+          <img class="author-icon" src="assets/img/albertinobraganca.png" style="width: 90px; height: 90px; flex-shrink: 0;">
+          <img src="assets/img/SetaResenha.png" alt="" width="20" height="50" class="d-inline-block align-text-top" style="flex-shrink: 0;">
+          <a href="autores.html#Braganca" class="text-verdedessaturado text-decoration-underline" style="text-decoration-thickness: auto;">
+            <h3 class="mb-0 text-start" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Saiba mais sobre o autor</h3>
+          </a>
+      </div>
+  </div>
+</section>
+
+
+        
+         <!-- Footer -->
+    <footer class="bg-cianodessaturado text-white py-4" id="Footer">
+  <div class="container">
+    <h4 class="text-center text-bege">Site educacional sem fins lucrativos</h4>
+    <p class="text-center text-bege">Realizado por alunos do Curso Integrado de Comunicação Visual (CV6B)</p>
+    
+    <div class="row py-5 my-5 border-top">
+      <!-- Logos -->
+      <div class="col-md-3 mb-3">
+        <div class="d-flex flex-wrap align-items-center gap-3">
+          <img src="assets/img/LogoAtica.png" alt="Logo Atica" class="img-fluid" style="max-width: 150px;">
+          <img src="assets/img/LogoIFSC.png" alt="Logo IFSC" class="img-fluid" style="max-width: 180px;">
+        </div>
+      </div>
+
+      <!-- Participação -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-bege">Participação</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="solidao.html" class="nav-link p-0 text-white">Solidão</a> — Júlia Souza Paz</li>
+          <li class="nav-item mb-2"><a href="oPrimoBitu.html" class="nav-link p-0 text-white">O Primo Bitu</a> — Mariana Eichenberg Alceno</li>
+          <li class="nav-item mb-2"><a href="gaviaoVeioDoSulEPum.html" class="nav-link p-0 text-white">Gavião Veio do Sul e Pum!</a> — Sofia Barroso Medeiros</li>
+          <li class="nav-item mb-2"><a href="nosChoramosPeloCaoTinhoso.html" class="nav-link p-0 text-white">Nós Choramos Pelo Cão Tinhoso</a> — Bianca Horst Kimura</li>
+        </ul>
+      </div>
+
+      <!-- Onde Ler -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-bege">Onde Ler</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://www.coletivoleitor.com.br/livro/contos-africanos-dos-paises-de-lingua-portuguesa" class="nav-link p-0 text-white">Contos Africanos dos Países de Língua Portuguesa</a></li>
+          <li class="nav-item mb-2"><a href="https://www.amazon.com.br/Rosa-do-Riboque-outros-contos/dp/9722111566" class="nav-link p-0 text-white">Rosa do Riboque e Outros Contos</a></li>
+          <li class="nav-item mb-2"><a href="https://sadacosta.com/livro/2203JS404/semear-em-po" class="nav-link p-0 text-white">Semear em Pó</a></li>
+          <li class="nav-item mb-2"><a href="https://www.traca.com.br/livro/1427721/fogo-fala/" class="nav-link p-0 text-white">O Fogo da Fala</a></li>
+          <li class="nav-item mb-2"><a href="https://www.amazon.com.br/Os-Minha-Rua-Ondjaki/dp/9722118633" class="nav-link p-0 text-white">Os da Minha Rua</a></li>
+        </ul>
+      </div>
+
+      <!-- Contato -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-bege">Contato da Editora</h4>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="https://atica.saber.com.br" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoAtica2.png" alt="" style="width: 10%;"> Site</a></li>
+          <li class="nav-item mb-2"><a href="https://atica.saber.com.br/contato/" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoEmail.png" alt="" style="width: 10%;"> E-mail</a></li>
+          <li class="nav-item mb-2"><a href="https://www.instagram.com/editora.atica/" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoInstagram.png" alt="" style="width: 10%;"> Instagram</a></li>
+          <li class="nav-item mb-2"><a href="https://www.facebook.com/aticascipione/?locale=pt_BR" class="nav-link p-0 text-white" target="_blank" rel="noopener noreferrer"> <img src="assets/img/LogoFacebook.png" alt="" style="width: 10%;"> Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    </footer>
+
+      <!-- Widgets acessibilidade NÃO MEXER -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>    
+
+    <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
+
+    <!-- Script do Bootstrap NÃO MEXER -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <!-- JS Bootstrap NÃO MEXER-->
+    <script src="js/scripts.js"></script>
+
+     <script>
+      const btnTopo = document.getElementById('btn-topo');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 400) {
+          btnTopo.classList.add('show');
+        } else {
+          btnTopo.classList.remove('show');
+        }
+      });
+      btnTopo.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+</body>
+</html>
