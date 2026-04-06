@@ -1,0 +1,339 @@
+@font-face {
+    font-family: "gill";
+    src: url("../fonts/gill-sans-display-mt-pro-bold.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: "gill";
+    list-style: none;
+    background-image: url(../images/fundo/tenta-esse.jpg);
+    background-clip: content-box;    
+}
+
+.logo {
+    width:290px;
+    margin-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.bg-menu{
+    font-family: "gill";
+    background-color: #b12148;
+}
+
+ul, li {
+    font-family: "gill";
+    margin: 0px;
+    list-style: none; 
+}
+
+.logo {
+    display: flex;
+    width:80%;
+    margin-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.topo {
+    background-color: #b12148;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    flex-wrap: wrap;
+}
+
+.Menu {
+    margin-left: 105px;
+    margin-top: 80px;        
+    display: flex;
+    /*position: relative;*/
+    position: absolute;
+    
+}
+
+.itemMenu{
+   justify-content: center;
+}
+
+h1{
+    font-family: "gill";
+    font-size: 60px;
+}
+
+.fotocultura{
+    height: 255px;
+    float:inline-end;
+}
+
+.textoinicio{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    padding: 3%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background-color: #b12148;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.textoinicio img{
+    width:65px;
+    height: auto;
+    min-width: 400px;
+    max-width: 100px;
+    border-radius: 50px;
+    margin-right:20px ;
+
+}
+
+.textocontatos{
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 50px;
+    padding: 3%;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #b12148;
+    border-radius: 50px;
+}
+.textocontatos img{
+    max-width: 5%;
+}
+
+video{
+    width: 50%;   
+}
+
+.cardcultura img{
+    max-width: 100%;
+    position: relative;
+    top: 30px;
+}
+
+.resumo{
+    margin-left: 20px;
+    font-family: "gill";
+    color: white;
+    font-size: 22px;
+}
+
+.cardcultura{
+    display: flex;
+    justify-content: space-around;
+    margin: 10%;
+}
+
+
+.cA{
+    font-family: "gill";
+    background-color: #b12148;
+    border-radius: 500px 500px 0px 0px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    margin: 2%;
+}
+
+.cB{
+    font-family: "gill";
+    background-color: #b12148;
+    border-radius: 500px 500px 0px 0px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    margin: 2%;
+}
+
+.cC{
+    font-family: "gill";
+    background-color: #b12148;
+    border-radius: 500px 500px 0px 0px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    margin: 2%;
+}
+
+.tituloconto{
+    margin-left: 0px;
+    margin-right: 750px;
+    margin-top: 50px;
+    padding: 3%;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #b12148;
+    border-radius:0px 50px 50px 0px;
+}
+
+.subtituloconto{
+    margin-left: 20px;
+    font-family: "gill";
+    color: white;
+}
+.subtituloconto h1{
+    font-size: 55px;
+}
+
+.container{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    --bs-gutter-x:0px;
+}
+.container img{
+    border-radius: 50px;
+}
+.textoconto{
+   background-color: #b12148;
+   padding: 3%;
+   border-radius: 0px 50px 50px 0px;
+   margin-right: 0px;
+   width: 100%;
+}
+.fotolivro{
+    background-color: #b12148;
+    border-radius: 50px;
+    padding: 2%;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.resumoconto{
+    font-family: "gill";
+    color: white;
+    font-size: 22px;
+}
+
+
+.autoraconto{
+    margin-left: 750px;
+    margin-right: 0px;
+    margin-top: 50px;
+    padding: 3%;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #b12148;
+    border-radius:50px 0px 0px 50px;
+}
+.containerB{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center ;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    --bs-gutter-x:0px;
+}
+.containerB img{
+    border-radius: 50px;
+}
+.textocontoB{
+   background-color: #b12148;
+   padding: 3%;
+   border-radius: 50px 0px 0px 50px;
+   margin-right: 0px;
+   margin-left: 20px;
+   width: 100%;
+}
+.fotoautora{
+    background-color: #b12148;
+    border-radius: 50px;
+    padding: 2%;
+    justify-content: center;
+    margin-left: 110px;
+}
+
+.containerC{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    --bs-gutter-x:0px;
+}
+.containerC img{
+    border-radius: 50px;
+}
+.textohistoria{
+   background-color: #b12148;
+   padding: 3%;
+   border-radius: 0px 50px 50px 0px;
+   margin-right: 50px;
+   width: 100%;
+}
+.fotohistoria{
+    background-color: #b12148;
+    border-radius: 50px;
+    padding: 2%;
+    margin-right: 200px;
+    justify-content: center;
+}
+
+.resumohistoria{
+    font-family: "gill";
+    color: white;
+    font-size: 22px;
+}
+
+.titulonoticias{
+    margin-left: 520px;
+    margin-right: 520px;
+    margin-top: 50px;
+    padding: 3%;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #b12148;
+    border-radius:50px; 
+
+}
+
+.subtitulonoticias {
+    margin-left: 50px;
+    font-family: "gill";
+    color: white;
+}
+
+.mapa{
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-top: 50px;
+    padding: 3%;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #b12148;
+    border-radius:50px; 
+}
+
+.mapa iframe{
+    border-radius: 50px;
+}
+
+
+
+
+
+
+

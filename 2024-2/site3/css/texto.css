@@ -1,0 +1,51 @@
+.titu{
+    text-align: center;
+    font-size: 70px;
+    color: #344e41;
+}
+
+.titu2{
+  text-align: center;
+  font-size: 55px;
+  color: #344e41;
+}
+
+
+.robotinho {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  @font-face {
+    font-family:"garetinho";
+    src: url('../fonts/garet.woff2');
+  }
+  
+  .garet {
+    font-family: "garetinho";
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+
+  .gordocara {
+    font-family: "Abril Fatface", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .tverde{
+    color: #344e41 ;
+  }
+
+  .final{
+    color: rgb(217, 238, 211);
+  }
+  
+
+  

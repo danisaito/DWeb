@@ -1,0 +1,11 @@
+.parallau {
+    background-image:url('../images/cachoeira2.png');
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 700px;
+  width: 100%;
+}
+
