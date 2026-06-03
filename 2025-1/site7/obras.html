@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Outras Obras de Franz Kafka</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .obra {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      margin-bottom: 40px;
+    }
+
+    .obra-img {
+      width: 220px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .obra-texto {
+      flex: 1;
+    }
+
+    .obra:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    @media (max-width: 768px) {
+      .obra {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .obra:nth-child(even) {
+        flex-direction: column;
+      }
+
+      .obra-texto {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Outras Obras de Franz Kafka</h1>
+    <p>Além de A Metamorfose, Kafka escreveu textos intensos e autobiográficos</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="metamorfose.html">A Metamorfose</a>
+    <a href="biografia.html">Biografia do Autor</a>
+    <a href="obras.html" class="active">Outras Obras</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <section>
+    <div class="obra">
+      <img src="img/carta.jpg" alt="Capa do livro Carta ao Pai" class="obra-img">
+      <div class="obra-texto">
+        <h2>Carta ao Pai</h2>
+        <p>Escrita em 1919, essa carta não foi publicada por Kafka, mas é uma das peças mais reveladoras de sua psique. Com cerca de 100 páginas, Kafka expõe sentimentos profundos de medo, inferioridade, culpa e repressão.</p>
+        <p>A carta nunca foi entregue, mas é essencial para entender os conflitos pessoais que permeiam suas obras. É um retrato íntimo e doloroso do trauma pessoal de Kafka.</p>
+      </div>
+    </div>
+
+    <div class="obra">
+      <img src="img/processo.jpg" alt="Capa do livro O Processo" class="obra-img">
+      <div class="obra-texto">
+        <h2>O Processo</h2>
+        <p>Publicado postumamente em 1925, <em>O Processo</em> acompanha Josef K., um homem preso e julgado por um crime desconhecido. A obra simboliza o sentimento de culpa e impotência diante de um sistema burocrático opressor.</p>
+        <p>É uma narrativa perturbadora e filosófica que questiona a justiça, a alienação e a opressão social.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Recomendações de leitura essencial de Franz Kafka</p>
+  </footer>
+</body>
+
+</html>
