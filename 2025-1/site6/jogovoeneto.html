@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EntrePalavras - Carta para o Futuro</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Rosarivo&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bege: #FFFCE6;
+      --laranja1: #D68615;
+      --laranja2: #D5711C;
+      --laranja3: #D95612;
+      --marrom1: #883418;
+      --marrom2: #683D10;
+      --marrom3: #341F0C;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--bege);
+      font-family: 'Mulish', sans-serif;
+      color: var(--marrom3);
+    }
+
+    header {
+      background-color: var(--marrom1);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      font-weight: normal;
+    }
+
+    header img {
+      height: 90px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Rosarivo', serif;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .quote {
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 320px;
+      padding: 20px 10px 10px 10px;
+      box-sizing: border-box;
+      background-color: transparent;
+      border: 1px solid var(--marrom3);
+      resize: none;
+      font-family: 'Mulish', sans-serif;
+      font-size: 16px;
+      color: var(--marrom3);
+      line-height: 28px;
+    }
+
+    textarea:focus {
+      outline: none;
+    }
+
+    .dots {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .dots img {
+      width: 260px;
+      height: auto;
+    }
+
+    .enviar {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .btn {
+      margin-top: 10px;
+      background-color: var(--laranja2);
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: var(--laranja3);
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    .overlay, .success {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    #show-form:checked ~ #show-success:not(:checked) ~ .overlay {
+      display: flex;
+      z-index: 1001;
+    }
+
+    #show-success:checked ~ .success {
+      display: flex;
+      z-index: 1002;
+    }
+
+    .modal {
+      background: var(--marrom1);
+      padding: 28px;
+      border-radius: 12px;
+      width: 440px;
+      color: white;
+      position: relative;
+      text-align: left;
+      box-sizing: border-box;
+    }
+
+    .modal h2 {
+      text-align: center;
+      font-size: 22px;
+      margin-top: 0;
+    }
+
+    .close {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      cursor: pointer;
+      font-size: 18px;
+      color: white;
+    }
+
+    .modal input[type="text"], .modal input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 14px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .modal small {
+      display: block;
+      margin-bottom: 14px;
+    }
+  </style>
+</head>
+<body>
+  <input type="checkbox" id="show-form">
+  <input type="checkbox" id="show-success">
+
+  <header>
+    <img src="imagens/Logo branca.png" alt="Logo EntrePalavras" />
+    <nav>
+      <a href="páginainicial.html">Página inicial</a>
+      <a href="oautor.html">O autor</a>
+      <a href="biblioteca.html">Biblioteca</a>
+      <a href="jogos.html">Jogos</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>O avô leva o neto para o lago proibido, onde panos misteriosos acenam do outro lado da margem. Agora é a sua vez:</h1>
+    <p class="subtitle"><strong>Escreva uma memória,</strong> real ou imaginada, com alguém mais velho que te ensinou a ver o mundo com outros olhos.</p>
+
+    <p class="quote">“Você não vê lá, na margem? Por trás do cacimbo?”
+
+</p>
+
+    <textarea placeholder="Escreva sua carta aqui..."></textarea>
+
+    <div class="dots">
+      <img src="imagens/Atividades interativas site.png" alt="Decoração de bolinhas" />
+    </div>
+    <p class="enviar">Envie para seu email, e leia no futuro!</p>
+
+    <label for="show-form" class="btn">Enviar</label>
+  </div>
+
+  <!-- Modal de formulário -->
+  <div class="overlay">
+    <div class="modal">
+      <label for="show-form" class="close">×</label>
+      <label for="nome">Nome completo</label><br />
+      <input type="text" id="nome" placeholder="Escreva seu nome aqui" /><br />
+      <label for="email">E-mail</label><br />
+      <input type="email" id="email" placeholder="Ex: seunome@gmail.com" /><br />
+      <small>Ao enviar, estou ciente das diretrizes da política de privacidade e dos termos de uso.</small>
+      <label for="show-success" class="btn" style="display:block; text-align:center;">Enviar</label>
+    </div>
+  </div>
+
+  <!-- Mensagem de sucesso -->
+  <div class="success">
+    <div class="modal" style="text-align: center;">
+      <label for="show-success" class="close">×</label>
+      <h2>Enviado!</h2>
+      <p>Sua carta foi enviada! Abra seu email e confira!</p>
+      <a href="jogos.html" class="btn">Voltar para jogos</a>
+    </div>
+  </div>
+</body>
+</html>

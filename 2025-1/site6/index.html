@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página Inicial | EntrePalavras</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Rosarivo&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Mulish', sans-serif;
+      background-color: #FFFCE6;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Rosarivo', serif;
+    }
+    header {
+      background-color: #883418;
+      padding: 1rem 0;
+      color: white;
+    }
+    .nav-link {
+      color: white !important;
+    }
+    .navbar-nav {
+      gap: 1rem;
+    }
+    .hero-section {
+      background-color: #FFFCE6;
+      padding: 2rem;
+      text-align: left;
+    }
+    .livro-section {
+      background-color: #883418;
+      color: white;
+      padding: 2rem;
+    }
+    .resenhas-section {
+      background-color: #FFFCE6;
+      padding: 2rem;
+    }
+    .resenha-box {
+      background-color: #D5711C;
+      color: white;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .resenha-toggle {
+      display: none;
+    }
+    .resenha-titulo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .resenha-conteudo {
+      display: none;
+      margin-top: 1rem;
+      flex-direction: row;
+      gap: 1rem;
+      color: white;
+    }
+    .resenha-toggle:checked + label + .resenha-conteudo {
+      display: flex;
+    }
+    .resenha-texto {
+      width: 80%;
+    }
+    .resenha-imagem {
+      width: 20%;
+      height: auto;
+      object-fit: contain;
+    }
+    .logo {
+      height: 90px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="container-fluid">
+    <div class="container d-flex justify-content-between align-items-center">
+      <img src="imagens/Logo_branca.png" alt="Logo EntrePalavras" class="logo">
+      <ul class="nav">
+        <li class="nav-item"><a href="index.html" class="nav-link">Página inicial</a></li>
+        <li class="nav-item"><a href="oautor.html" class="nav-link">O autor</a></li>
+        <li class="nav-item"><a href="biblioteca.html" class="nav-link">Biblioteca</a></li>
+        <li class="nav-item"><a href="jogos.html" class="nav-link">Jogos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Seção de apresentação -->
+  <section class="hero-section container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Palavras que caminham entre o sonho e o chão de Moçambique.</h2>
+        <p>Descubra o universo mágico de Mia Couto e do livro “Estórias Abensonhadas”.</p>
+        <a href="https://www.miacouto.org" target="_blank" class="btn btn-dark mt-3">Confira o site oficial do autor</a>
+      </div>
+      <div class="col-md-6">
+        <img src="imagens/mia-couto.png" alt="Mia Couto" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Estórias Abensonhadas -->
+  <section class="livro-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <img src="imagens/capa_do_livro.png" alt="Capa do livro" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+          <h3>Estórias Abensonhadas</h3>
+          <p>Publicado em 1994, <em>Estórias Abensonhadas</em> é um livro de Mia Couto com 26 contos que misturam realidade e fantasia com um enredo de pós-guerra em Moçambique.</p>
+          <p>Com uma linguagem poética e marcada por neologismos, os contos abordam temas como esperança, memória, infância e reconstrução.</p>
+          <p>Mesmo com o passado recente de guerra como pano de fundo, os contos são carregados de encantamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção das resenhas -->
+  <section class="resenhas-section container">
+    <h4 class="text-center mb-4">Leia as resenhas dos contos selecionados</h4>
+    <p class="text-center">Clique na seta para abrir ou fechar a resenha:</p>
+
+    <!-- Resenha 1 -->
+    <div class="resenha-box">
+      <input type="checkbox" id="toggle-resenha1" class="resenha-toggle">
+      <label for="toggle-resenha1" class="resenha-titulo">Nas águas do tempo <span>&#x25BC;</span></label>
+      <div class="resenha-conteudo">
+        <div class="resenha-texto">
+          <p>Neste conto, Mia Couto nos apresenta um neto e seu avô navegando juntos até um lago “proibido”. A travessia simboliza mais do que um passeio: trata-se de uma jornada iniciática onde o tempo, a memória e a ancestralidade se entrelaçam. A água surge como elo entre gerações e espaço onde o passado não se perde, apenas muda de forma. No lago, o avô vê panos brancos que acenam do outro lado da margem, provavelmente sinalizando a morte ou a travessia final. Ainda assim, o tom do conto é delicado, poético e quase místico. Ao final, o avô desaparece como que “absorvido” pelo próprio tempo. É um conto sobre herança afetiva e a forma como os mais velhos nos moldam, mesmo quando partem.</p>
+        </div>
+        <img src="imagens/Capa_resenha_nas_aguas.png" alt="Ilustração do conto" class="resenha-imagem">
+      </div>
+    </div>
+
+    <!-- Resenha 2 -->
+    <div class="resenha-box">
+      <input type="checkbox" id="toggle-resenha2" class="resenha-toggle">
+      <label for="toggle-resenha2" class="resenha-titulo">Chuva: a abensonhada <span>&#x25BC;</span></label>
+      <div class="resenha-conteudo">
+        <div class="resenha-texto">
+          <p>Esse conto é puro sentimento. Depois de muito tempo sem chover, a água finalmente volta e não é só a terra que precisa dela, mas também as pessoas. A tia do narrador é quem dá sentido à chuva: ela diz que é uma “chuva abensonhada”, uma bênção que vem de longe, como um presente dos que já se foram. A chuva aqui tem um peso simbólico muito grande. Ela limpa, renova, cura. É como se lavasse tudo de ruim que a guerra deixou. Ao mesmo tempo, o narrador mostra um certo medo da chuva, talvez porque já estava acostumado com a dor e o sofrimento. Mas a tia, com sua sabedoria, mostra que é hora de recomeçar.</p>
+        </div>
+        <img src="imagens/capa_resenha_chuva.png" alt="Ilustração do conto" class="resenha-imagem">
+      </div>
+    </div>
+
+    <!-- Resenha 3 -->
+    <div class="resenha-box">
+      <input type="checkbox" id="toggle-resenha3" class="resenha-toggle">
+      <label for="toggle-resenha3" class="resenha-titulo">A guerra dos palhaços <span>&#x25BC;</span></label>
+      <div class="resenha-conteudo">
+        <div class="resenha-texto">
+          <p>Este conto é uma poderosa fábula política e satírica. Dois palhaços, que simbolizam líderes de facções em guerra, manipulam populações inteiras para lutar e morrer em nome de suas causas vazias. Ao final, mesmo com tantas mortes, os palhaços se reconciliam e partem para outra cidade, onde tudo recomeça. A crítica é clara: são os líderes que iniciam guerras, mas é o povo quem morre por elas. A guerra é retratada como espetáculo absurdo. Um circo onde se mata por nada, com riso forçado e gestos coreografados. A “palhaçada” da política, da guerra e do poder revela-se cruel, impiedosa e, acima de tudo, repetitiva.</p>
+        </div>
+        <img src="imagens/capa_resenha_palhacos.png" alt="Ilustração do conto" class="resenha-imagem">
+      </div>
+    </div>
+
+    <!-- Resenha 4 -->
+    <div class="resenha-box">
+      <input type="checkbox" id="toggle-resenha4" class="resenha-toggle">
+      <label for="toggle-resenha4" class="resenha-titulo">O abraço da serpente <span>&#x25BC;</span></label>
+      <div class="resenha-conteudo">
+        <div class="resenha-texto">
+          <p>Nesse conto, um filho vai visitar o pai doente e encontra uma cena estranha: o pai está sendo "tomado" por uma serpente. Mas a serpente é simbólica, representa tudo o que o pai guardou por dentro, talvez mágoas, segredos ou culpas que o foram consumindo ao longo da vida. Mesmo assim, o filho não recua. Ele se aproxima, toca, abraça. É um gesto simples, mas cheio de significado. O conto fala de reconciliação, de amor mesmo quando já quase não se reconhece mais a pessoa que se ama. É forte e delicado ao mesmo tempo.</p>
+        </div>
+        <img src="imagens/Capa_resenha_cobra.png" alt="Ilustração do conto" class="resenha-imagem">
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>

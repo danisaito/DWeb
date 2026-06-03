@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EntrePalavras - Atividades</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #FFFCE6;
+      font-family: 'Mulish', sans-serif;
+      color: #341F0C;
+    }
+
+    header {
+      background-color: #883418;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    .logo {
+      height: 90px;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: normal;
+    }
+
+    .main-content {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .main-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      font-family: 'Rosarivo', serif;
+    }
+
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .activity-card {
+      background-color: #D5711C;
+      color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      padding: 0;
+      transition: transform 0.3s ease;
+      text-decoration: none;
+    }
+
+    .activity-card:hover {
+      transform: scale(1.03);
+    }
+
+    .activity-card img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+    }
+
+    .activity-card p {
+      padding: 15px;
+      margin: 0;
+      font-size: 1.1rem;
+      color: #fff;
+    }
+
+    .download-section {
+      margin-top: 40px;
+      font-size: 1.1rem;
+    }
+
+    .download-section strong {
+      color: #341F0C;
+    }
+
+    .btn-custom {
+      background-color: #D95612;
+      color: #fff;
+      border: none;
+      margin-top: 15px;
+      padding: 10px 25px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header class="container-fluid">
+    <div class="container d-flex justify-content-between align-items-center">
+      <img src="imagens/Logo_branca.png" alt="Logo EntrePalavras" class="logo">
+      <ul class="nav">
+        <li class="nav-item"><a href="index.html" class="nav-link">Página inicial</a></li>
+        <li class="nav-item"><a href="oautor.html" class="nav-link">O autor</a></li>
+        <li class="nav-item"><a href="biblioteca.html" class="nav-link">Biblioteca</a></li>
+        <li class="nav-item"><a href="jogos.html" class="nav-link">Jogos</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <h1>Preparado para ir além da leitura?</h1>
+    <p>Coloque em prática sua criatividade com as atividades sobre os contos de<br><strong>Estórias Abensonhadas</strong> de forma prática e divertida!</p>
+    <h5 class="mt-4"><strong>Primeiro escolha a atividade:</strong></h5>
+
+    <div class="activity-grid container mt-4">
+      <a href="jogomenino.html" class="activity-card">
+        <img src="jogos/Menino_na_janela.png" alt="Chuva: a Abensonhada">
+        <p>Chuva: a Abensonhada</p>
+      </a>
+      <a href="jogovoeneto.html" class="activity-card">
+        <img src="jogos/Voeneto.png" alt="Nas águas do tempo">
+        <p>Nas águas do tempo</p>
+      </a>
+      <a href="jogodamemoria.html" class="activity-card">
+        <img src="jogos/palhaco.png" alt="A guerra dos palhaços">
+        <p>A guerra dos palhaços</p>
+      </a>
+      <a href="jogoserpente.html" class="activity-card">
+        <img src="jogos/Serpente_1.png" alt="O abraço da serpente">
+        <p>O abraço da serpente</p>
+      </a>
+    </div>
+
+    <div class="download-section">
+      <p class="mt-4"><strong>Ei!</strong> Sabia que <strong>você pode imprimir as atividades</strong> para ter uma experiência ainda mais criativa?!</p>
+      <button class="btn-custom">Baixar atividades</button>
+    </div>
+  </div>
+</body>
+</html>
+
