@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  background-color: #d6e493;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.site-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-button {
+  font-size: 24px;
+  text-decoration: none;
+  color: #3a2b47;
+  margin-left: 20px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.icons img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.nav-menu {
+  background-color: #f39072;
+  margin: 20px auto 0;
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.nav-menu a {
+  color: #fce07b; 
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.nav-menu span {
+  color: #fce07b;
+  margin: 0 5px;
+}
+ 
+h1{
+  color: #f48f6d;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  align-items: center;
+}
+
+.illustration {
+  width: 50%;
+  height: 300px;
+  background: url('imagens/Menina.png') no-repeat center center;
+  background-size: contain;
+  margin-left: 125px;
+}
+
+.login-box {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: none;
+}
+
+.login-box input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #f39072;
+  font-size: 16px;
+}
+
+.login-box a {
+  color: #555;
+  text-decoration: underline;
+  font-size: 14px;
+}
