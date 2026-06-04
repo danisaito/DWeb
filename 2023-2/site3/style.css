@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-jogos {
+    background-image: url("Imagens/gremio\ jogando.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 87.4vh;
+    opacity: 1;
+}
+
+.bg-titulos {
+    background-image: url("Imagens/trofeu\ gremio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 86vh;
+    opacity: 1;
+}
+
+.card {
+    min-height: 30vh;
+    align-items: center;
+}
+
+.bg-loja {
+    background-image: url("Imagens/loja\ gremio.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 87.4vh;
+    opacity: 1;
+}
+
+.bg-index {
+    background-image: url("Imagens/foto\ fundo\ index.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 86vh;
+    opacity: 0.3;
+}
+
+.bg-noticias {
+    background-image: url("Imagens/background\ noticias.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 86vh;
+    opacity: 1;
+}
+
+.bg-grenal {
+    background-image: url("Imagens/Grenal-briga.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    opacity: 1;
+}
+
+header {
+    background-color: #37ADE8;
+    padding: 70px;
+}
+
+.bg-nav {
+    background-color: #38b6ff;
+    opacity: 100%;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 28pt;
+    color: aliceblue;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.navbar {
+    min-height: 10vh;
+}
+
+a {
+    padding: 15px;
+    font-size: 28px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+
