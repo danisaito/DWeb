@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Srirachadisplay=swap');
+
+@font-face {
+  font-family: 'gilda display';
+  src: url('../Fontes/GildaDisplay-Regular.ttf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'quicksand';
+  src: url('../Fontes/Quicksand-VariableFont_wght.ttf') format('opentype');
+  font-weight: normal;
+
+}
+
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: white;
+  font-family: var(quicksand);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+header > h1 {
+  color: black;
+  font-size: 50px;
+}
+
+div {
+  background-color: white;
+  color: black;
+  display: block;
+  float: left;
+  cursor: pointer;
+}
+
+span {
+  height: 100px;
+}
+
+menu {
+  display: none;
+}
+
+#logo { 
+  width: 100px;
+  float: right;
+}
+
+.fundo {
+  width: 100vw;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right center;
+}
+
+h1 {
+  font-family: 'gilda display';
+}
+
+p {
+  font-family: 'quicksand';
+}
+
+.titulo01, .titulo02 {
+  text-align: center;
+  font-size: 50px;
+  margin: 40px 0px 20px 0px;
+}
+
+#titulo03 {
+  text-align: right;
+  font-size: 50px;
+  margin: 40px 0px 20px 0px;
+}
+
+.texto01, .texto02 {
+  text-align: center;
+  float: none;
+  font-size: 30px;
+  margin: 40px 0px 50px 0px;
+}
+
+div.quadrado {
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius: 13px;
+  width: 250px;
+  height: 250px;
+}
+
+div#q1 {
+  background-image: url('../Imagens/atleta1.jpg');
+}
+
+div#q2 {
+  background-image: url('../Imagens/atleta2.jpg');
+}
+
+div#q3 {
+  background-image: url('../Imagens/atleta3.jpg');
+}
+
+div#q4 {
+  background-image: url('../Imagens/atleta4.jpg');
+}
+
+div#q5 {
+  background-image: url('../Imagens/atleta5.jpg');
+}
+
+div#q6 {
+  background-image: url('../Imagens/atleta6.jpeg');
+}
+
+#alvo1 {
+  float: left;
+  margin: 100px 20px 100px 30px;
+}
+
+div.scroll-container {
+  float: none;
+  background-color: #ffffff;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  float: none;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  float: none;
+  height: 400px;
+}
+
+#textom {
+  text-align: center;
+  font-size: 30px;
+  margin: 40px 0px 50px 0px;
+}
+
+div.scroll-container img {
+  float: none;
+  background-color: #ffffff;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  float: none;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  float: none;
+  height: 400px;
+}
+
+div.scroll-container img {
+  float: none;
+  background-color: #ffffff;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  float: none;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  float: none;
+  height: 400px;
+}
+
+#img {
+  float: none;
+}
+
+
+/**********/
+
+.header {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: none;
+  background-color: #ffffff;
+  position: fixed;
+  height: 60px!important;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#sidebarMenu {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  margin-top: 60px;
+  transform: translateX(-250px);
+  transition: transform 250ms ease-in-out;
+  background: #ffffff;
+}
+.sidebarMenuInner{
+  margin:0;
+  padding:0;
+  /*border-top: 1px solid rgba(255, 255, 255, 0.10);*/
+}
+.sidebarMenuInner li{
+  list-style: none;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+  /*border-bottom: 1px solid rgba(255, 255, 255, 0.10);*/
+}
+
+.sidebarMenuInner li span{
+  display: block;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  transform: translateX(0);
+}
+
+input[type=checkbox] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+.sidebarIconToggle {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 22px;
+  left: 15px;
+  height: 22px;
+  width: 22px;
+}
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #000000;
+}
+
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+}
+
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
