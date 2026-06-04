@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.imagemdefundo{
+    opacity: 60%;
+    position:absolute;
+}
+
+.texto{    
+    display: block;
+    font-family: 'lexend', sans-serif;
+    font-size:16px;
+    color:white;
+    margin: 70px;
+    margin-top:80px;    
+    padding:15px;
+}
+
+
+h1{
+    display: block;
+    margin-bottom: -120px;
+    margin-left: 215px;
+    font-family: 'lexend', sans-serif;
+    font-weight: 900;
+    font-size:28px;
+    color:rgb(255, 255, 255);
+    
+}
+
+.titulob{
+    font-family: 'lexend', sans-serif;
+    font-weight: 400;
+    font-size:28px;
+    color: black;
+    opacity: 100%;
+}
+
+h2{
+    font-family: 'lexend', sans serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.not{
+    background-color: black;
+    opacity: 60%;
+    text-align: center;
+    justify-content: center;
+}
+
+.noticias{
+    background-color: #5DE0E6;
+    opacity: 100%;
+    position: relative;
+    top: 40px;
+    right: 0px;
+    z-index: 100;
+}
+
+.bloco{
+    position:relative;
+    left: -15px;
+    top: 250px;
+    width: 600px; 
+    height: 340px; 
+    background-color: rgb(3, 136, 158);
+    border-top-right-radius: 200px; 
+    border-bottom-right-radius: 200px;
+    text-align:center;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: center;    
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'lexend', sans-serif;
+}
+
+.header {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background: linear-gradient(to right,#5DE0E6,#E3F2FF);
+    position: fixed;
+    height: 60px!important;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 60px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: #5DE0E6;
+    z-index: 100;
+}
+
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    /*border-top: 1px solid rgba(255, 255, 255, 0.10);*/
+}
+
+.sidebarMenuInner li{
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-family: 'lexend', sans serif;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.10);*/
+}
+
+ul.sidebarMenuInner li {
+    border-bottom: 2px solid black;
+    margin: 5px;
+    padding: 20px;
+}
+
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.sidebarMenuInner li a{
+    color: rgb(0, 0, 0);
+    font-family: 'lexend', sans serif;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
