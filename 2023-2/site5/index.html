@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belle Ballerine</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&display=swap">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<!-- arrumar o "pesquisar" -->
+
+<!-- <div class="topnav">
+
+    <input type="text" placeholder="Search..">
+    <div class="dropdown">
+        <button class="mainmenubtn"><i class="fa fa-bars"></i></button>
+        <div id="main-menu" class="dropdown-child">
+            <a href="historia.html">HISTÓRIA</a>
+            <a href="estilos.html">ESTILOS</a>
+            <a href="movimentos.html">MOVIMENTOS</a>
+        </div>
+    </div>
+  </div>
+   -->
+
+   <body class="container">
+    <div id="main-menu" class="drawer-menu">
+        <a class="menu-item" href="index.html"> INÍCIO</a>
+        <a class="menu-item" href="historia.html"> HISTÓRIA</a>
+        <a class="menu-item" href="estilos.html"> ESTILOS</a>
+        <a class="menu-item" href="movimentos.html"> MOVIMENTOS</a>
+    </div>
+
+    <div class="content">
+
+        <div class="flex-bb">
+            <img src="imagens/bb.png" class="icon bb">
+        </div>
+
+        <div class="flex-search">
+            <input class="search" type="text" placeholder="Pesquise aqui...">
+            <div class="searchicon"><i class="fa fa-search"></i></div>
+        </div>
+
+        <div class="flex-mediaicons">
+            <span class="mediaicons">
+                <a href="https://www.instagram.com/espacomovidanca/"><img src="imagens/ig.png" class="icon"></a>
+                <a href="https://movidanca.com.br/"><img src="imagens/website.png" class="icon"></a>
+                <a href="creditos.html"><img src="imagens/creditos.png" class="icon"></a>
+            </span>
+            <div class="dropdown">
+                <button class="mainmenubtn icon" id="hamburger"><i class="fa fa-bars"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- arrumar o menu -->
+
+    <img src="imagens/inicio.png" class="logo">
+    <br>
+    <!-- <div class="dropdown">
+        <button class="mainmenubtn">☰</button>
+        <div class="dropdown-child">
+            <a href="historia.html">HISTÓRIA</a>
+            <a href="estilos.html">ESTILOS</a>
+            <a href="movimentos.html">MOVIMENTOS</a>
+        </div>
+    </div> -->
+
+    <!--posicionar os icons nos lugares certos-->
+    <!--
+    <img src="5.png" width="4%" class="pagina-inicial">
+
+    <img src="4.png" width="4%" class="pagina-inicial">
+
+    <img src="3.png" width="4%" class="pagina-inicial">
+
+    <img src="2.png" width="4%" class="pagina-inicial">
+
+    <img src="1.png" width="4%" class="pagina-inicial">
+
+    <img src="7.png" width="4%" class="pagina-inicial"> -->
+
+    <div class="gallery">
+        <div class="image">
+            <img src="imagens/b1.png" alt="Descrição da imagem">
+        </div>
+        <div class="image">
+            <img src="imagens/b2.png" alt="Descrição da imagem">
+        </div>
+        <div class="image">
+            <img src="imagens/b3.png" alt="Descrição da imagem">
+        </div>
+        <div class="image">
+            <img src="imagens/b4.png" alt="Descrição da imagem">
+        </div>
+        <div class="image">
+            <img src="imagens/b5.png" alt="Descrição da imagem">
+        </div>
+        <div class="image">
+            <img src="imagens/b6.png" alt="Descrição da imagem">
+        </div>
+    </div>
+
+    <img src="imagens/frase.png" width="100%">
+
+    <!-- ajustar a caixa de mensagem -->
+
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <div>
+            <label for="name"><em>meu nome é...</em></label><br />
+            <input type="text" id="name" />
+        </div>
+
+        <div>
+            <label for="msg"><em>eu pratico/gostaria de praticar <strong>ballet</strong> porque...</em></label>
+            <textarea id="msg"></textarea>
+        </div>
+        <div class="button">
+            <button type="submit" class="btn-submit">♡ ENVIAR ♡</button>
+        </div>
+    </form>
+<br>
+    <!-- a parte do rodapé é aqui -->
+    <div class="content">
+        <div class="flex-mediaicons">
+            <span class="mediaicons">
+                <a href="https://www.instagram.com/espacomovidanca/"><img src="imagens/ig.png" class="icon"></a>
+                <a href="https://movidanca.com.br/"><img src="imagens/website.png" class="icon"></a>
+                <a href="creditos.html"><img src="imagens/creditos.png" class="icon"></a>
+            </span>
+        </div>
+        <div class="flex-allrights">
+            <p style="color:white">2023 © Todos os direitos reservados</p>
+        </div>
+        <div class="flex-voltar">
+            <button class="icon" id="btn-scroll" onclick="document.documentElement.scrollTop = 0" onMouseOver="this.style.cursor='pointer'"><img src="imagens/voltar-topo.png" class="icon"></button> 
+            <H1 style="color:white"> Voltar ao topo </H1>
+        </div>
+    </div>
+    <!-- rodapé termina aqui -->
+    </div>
+
+
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        hamburger.onclick = event => {
+            const menu = document.getElementById('main-menu');
+            menu.classList.toggle('show');
+        }
+        document.onclick = event => {
+            const menu = document.getElementById('main-menu');
+
+            if (event.target === hamburger || event.target.parentNode === hamburger) {
+                return;
+            }
+
+            if (event.target !== menu && event.target.parentNode !== menu) {
+                menu.classList.remove('show');
+            }
+        }
+
+    </script>
+</body>
+
+
+
+</html>
