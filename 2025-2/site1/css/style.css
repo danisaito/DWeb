@@ -1,0 +1,449 @@
+/* Fonte customizada */
+@font-face {
+  font-family: 'FonteTítulo';
+  src: url('Fonts/cordelina.otf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Fundo da barra fixa */
+.nav-background {
+  position: static;
+  height: 75px;
+  width: 100%;
+  background-color: #1e3a3b;
+  z-index: 998;
+}
+
+/* Header completa */
+.custom-header {
+  background-color: #1e3a3b;
+  color: white;
+}
+
+/* Barra fixa principal */
+.header-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1e3a3b;
+  height: 75px;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  transition: transform 0.3s ease;
+  border-bottom: 10px solid #1a3233;
+}
+
+/* Logo */
+.menu-logo {
+  height: 50px;
+  width: auto;
+  margin-left: 15px;
+}
+
+/* Links de navegação */
+.custom-header .nav-link {
+  font-family: 'FonteTítulo', sans-serif;
+  color: #ddb389;
+  font-weight: normal;
+  border: none;
+  transition: color 0.3s;
+  font-size: 1.3rem;
+  padding: 8px 15px;
+}
+
+.custom-header .nav-link:hover {
+  color: #b98c5c;
+}
+
+/* Barra de busca com ícone */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: white;
+  border-radius: 20px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  height: 40px;
+  max-width: 260px;
+}
+
+.search-container .search-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  font-family: 'Parmigiano Sans Std Reg', sans-serif;
+  width: 200px;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+  .search-container {
+    max-width: 160px;
+  }
+
+  .search-input {
+    width: 100px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Esconder/mostrar a barra ao rolar */
+.hide-nav {
+  transform: translateY(-100%);
+}
+
+.show-nav {
+  transform: translateY(0%);
+}
+
+/* Banner principal */
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 0px;
+}
+
+/* Fonte da lupa*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Seção inicial */
+.section-intro-bg {
+  background-color: #eec68f;
+  padding: 3rem 1rem;
+  box-shadow: 0 6px 15px -6px rgba(0, 0, 0, 0.15);
+  border-bottom: 6px solid #a8502d;
+  z-index: 1;
+  position: relative;
+}
+
+.section-intro-bg p {
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #3d3d3d;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.section-intro-bg h2 {
+  font-family: 'FonteTítulo', serif;
+  font-size: 2rem; 
+  color: #4d362d;
+  margin-bottom: 1rem !important;
+}
+
+.section-intro-bg .intro-img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.faixa-separadora {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #2a6d6d;
+  border-top: 6px double #1d4e4e;
+  border-bottom: 6px double #1d4e4e;
+  text-align: center;
+  margin: 30px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.titulo-faixa {
+  color: white;
+  font-family: 'FonteTítulo', serif;
+  font-size: 1.8rem;
+  margin: 0;
+  text-shadow: 1px 1px 2px #1e3a3b;
+}
+
+/* SEÇÃO DE DESTAQUE DO LIVRO */
+.book-highlight-wrapper {
+  background-color: #fdf1de;
+  border-radius: 15px;
+  padding: 25px 30px;
+  position: relative;
+  margin-left: 0;
+}
+
+.book-info-box {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  margin-left: 0 !important;
+  color: #3d3d3d;
+  font-family: Georgia, serif;
+  padding: 0;
+}
+
+.capa-livro {
+  max-width: 100% !important;
+  border: 12px double #358884;
+  border-radius: 5px;
+  padding: 6px;
+  background-color: #23635e;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.botao-confira {
+  display: inline-block;
+  padding: 10px 35px;
+  background-color: #1f5751; /* azul escuro */
+  color: #fff; /* texto branco visível */
+  font-family: 'FonteTítulo', serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 999px; /* formato pílula */
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.botao-confira:hover {
+  background-color: #355f88; /* azul mais claro no hover */
+  color: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Para o posicionamento z-index funcionar nas colunas */
+.position-relative {
+  position: relative;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
+/* Texto sinopse */
+.texto-sinopse {
+  text-align: justify;
+  text-indent: 2em;
+  line-height: 1.7;
+}
+
+/* Botão customizado */
+.btn-custom {
+  background-color: #a75a2c;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #8b4724;
+  color: white;
+}
+
+/* Títulos do rodapé */
+footer h4 {
+  color: #ddb389;
+  font-family: 'FonteTítulo', serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Rodapé principal */
+#Footer {
+  background-color: #1e3a3b;
+  color: #fff;
+  padding: 30px 0 15px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Container principal do rodapé */
+#Footer .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Linhas do rodapé */
+#Footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Colunas */
+#Footer .col-md-3 {
+  flex: 1 1 180px;
+  margin: 10px 20px;
+}
+
+/* Listas */
+#Footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#Footer ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* Links */
+#Footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#Footer a:hover {
+  color: #ff4e7a;
+  text-decoration: underline;
+}
+
+/* Tamanhos individuais das logos */
+.logo-editora {
+  max-height: 65px !important;
+  height: auto;
+}
+
+.logo-ifsc {
+  max-height: 100px !important;
+  height: auto;
+}
+
+/* Parte inferior do rodapé */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  color: #ddb389;
+}
+
+/* Imagens com ícones (contato) */
+#Footer ul li img {
+  width: 16px;
+  height: auto;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* Barra inferior colorida e largura total */
+.footer-bottom-bar {
+  background-color: #2a4a4a;
+  height: 20px;
+  width: 100%;
+}
+
+.autor-section {
+  background: #f5f9fc;
+  padding: 60px 20px;
+  border-top: 10px double #994324;
+  border-bottom: 4px double #355f88;
+}
+
+.container-autor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1400px !important;
+  margin: auto;
+  gap: 30px;
+}
+
+.contexto-section {
+  background: #f5f9fc;
+  padding: 60px 20px;
+  border-top: 10px double #994324;
+  border-bottom: 4px double #355f88;
+}
+
+.container-contexto {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1400px !important;
+  margin: auto;
+  gap: 30px;
+}
+
+.titulo-contexto {
+  font-family: 'FonteTítulo', serif;
+  font-size: 2rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #355f88;
+  border-bottom: 2px solid #355f88;
+  display: inline-block;
+}
+
+.titulo-biografia {
+  font-family: 'FonteTítulo', serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #355f88;
+  border-bottom: 2px solid #355f88;
+  display: inline-block;
+}
+
+.contexto-politico {
+  flex: 1 1 75%;
+  font-family: 'Georgia', serif;
+  color: #4d362d;
+  background-color: #ffffffd2;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+  line-height: 1.9;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+
+.biografia-autor {
+  flex: 1 1 75%;
+  font-family: 'Georgia', serif;
+  color: #4d362d;
+  background-color: #ffffffd2;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+  line-height: 1.9;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.foto-autor {
+  flex: 0 0 220px;
+}
+
+.foto-autor img {
+  max-width: 100%;
+  width: 100%;
+  border: 6px double #355f88;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
